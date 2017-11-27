@@ -6,16 +6,27 @@ public class Asteroid : MonoBehaviour
 {
     // Maximum speed allowed for an enemy
     [SerializeField] private float m_MaxSpeed;
+    Vector2 centerPoint = new Vector3(Screen.width * 0.5f, Screen.height * 0.5f);
 
     // Called when the enemy is initialized
     private void Start()
     {
+        // Get initial point immediately upon spawn
+        Vector2 spawnPoint = GetComponent<Rigidbody>().position;
+        // Calculate direction to center of screen (Earth)
+        Vector2 asteroidDirection = centerPoint - spawnPoint;
+        // Get unit vector
+        asteroidDirection = asteroidDirection / asteroidDirection.magnitude;
+
         /*
 		 * Add a random force to the enemy, effectively moving them in a
 		 * random direction at a random speed.
 		 */
-        var xForce = Random.Range(-1f, 1f) * m_MaxSpeed;
-        var yForce = Random.Range(-1f, 1f) * m_MaxSpeed;
+
+        float magnitude = Random.Range(-0f, 1f) * m_MaxSpeed;
+
+        var xForce = asteroidDirection.x * magnitude;
+        var yForce = asteroidDirection.y * magnitude;
         GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, yForce));
     }
 }

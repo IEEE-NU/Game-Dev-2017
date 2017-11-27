@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 481690187}
   - component: {fileID: 481690186}
   - component: {fileID: 481690185}
+  - component: {fileID: 481690189}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -193,6 +194,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &481690189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481690184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb188da9a0b8c5d4fbe7687fb97dca32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AsteroidPrefab: {fileID: 566522438}
+--- !u!1 &566522438 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1442617196809262, guid: c20f3dc15841b5e4696af4a59c71f69b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1293646267}
 --- !u!1001 &1293646267
 Prefab:
   m_ObjectHideFlags: 0
@@ -202,11 +220,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4550765578243144, guid: c20f3dc15841b5e4696af4a59c71f69b, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4550765578243144, guid: c20f3dc15841b5e4696af4a59c71f69b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.92
       objectReference: {fileID: 0}
     - target: {fileID: 4550765578243144, guid: c20f3dc15841b5e4696af4a59c71f69b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -230,6 +248,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4550765578243144, guid: c20f3dc15841b5e4696af4a59c71f69b, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50757048828611432, guid: c20f3dc15841b5e4696af4a59c71f69b,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 61764042962847470, guid: c20f3dc15841b5e4696af4a59c71f69b,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61764042962847470, guid: c20f3dc15841b5e4696af4a59c71f69b,
+        type: 2}
+      propertyPath: m_Size.y
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

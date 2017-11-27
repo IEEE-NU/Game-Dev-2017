@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour {
     // Singleton Design Pattern
     public static GameManager Instance;
 
+    //This is Main Camera in the scene
+    Camera m_MainCamera;
+
     // Modulate type of asteroid of spawn
     [SerializeField] private GameObject m_AsteroidPrefab;
 
@@ -19,7 +22,7 @@ public class GameManager : MonoBehaviour {
     private float m_TimeSinceLastAsteroid = 0;
 
     // How frequently an asteroid should spawn
-    private float m_AddAsteroidTime = 10;
+    private float m_AddAsteroidTime = 2;
 
     // Resets the game such that there is only one asteroid
     public void ResetGame()
@@ -36,6 +39,9 @@ public class GameManager : MonoBehaviour {
     // Called upon initialization
     private void Awake()
     {
+        //This gets the Main Camera from the scene
+        m_MainCamera = Camera.main;
+
         // Set the singleton instance
         if (Instance == null)
             Instance = this;
@@ -64,18 +70,26 @@ public class GameManager : MonoBehaviour {
     private Vector3 spawnLocation()
     {
         float x, y, z;
+        float height = m_MainCamera.orthographicSize;
+        float width = height * m_MainCamera.aspect;
         // Choose to spawn either in x or y bounds
-        if (Random.Range(0.0f, 1.0f) > 0.5f) // > 0.5 spawn X else spawn Y
+        if (Random.Range(0f, 1f) > 0.5f) // > 0.5 spawn X else spawn Y
         {
-            x = Random.Range(0.0f, 1.0f) * Screen.width;
-            y = 0.0f;
-            z = 0.0f;
+            x = Random.Range(0f, 1f) * width;
+            if (Random.Range(-1f, 1f) > 0)
+                y = height;
+            else
+                y = -height;
+            z = 0f;
         }
         else
         {
-            x = 0.0f;
-            y = Random.Range(0.0f, 1.0f) * Screen.height;
-            z = 0.0f;
+            if (Random.Range(-1f, 1f) > 0)
+                x = width;
+            else
+                x = -width;
+            y = Random.Range(0f, 1f) * height;
+            z = 0f;
         }
         Vector3 location = new Vector3(x, y, z);
         return location;

@@ -47,7 +47,6 @@ public class GameManager : MonoBehaviour {
             Instance = this;
 
         // Reset the game to its initial state
-        ResetGame();
     }
 
     // Called once per frame

@@ -176,7 +176,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -267,4 +266,113 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c20f3dc15841b5e4696af4a59c71f69b, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1848350336 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1175562564702802, guid: b61bac54981057b4cbbcb6e56629f658,
+    type: 2}
+  m_PrefabInternal: {fileID: 1897210204}
+--- !u!60 &1848350338
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848350336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5}
+      - {x: -0.4330127, y: -0.25000003}
+      - {x: 0.43301272, y: -0.24999996}
+--- !u!1001 &1897210204
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114655004111842586, guid: b61bac54981057b4cbbcb6e56629f658,
+        type: 2}
+      propertyPath: RotateSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114655004111842586, guid: b61bac54981057b4cbbcb6e56629f658,
+        type: 2}
+      propertyPath: MoveSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 212249646271903164, guid: b61bac54981057b4cbbcb6e56629f658,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58067778ef336fb468381a677b0af470,
+        type: 3}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327412837436584, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 70727573866155366, guid: b61bac54981057b4cbbcb6e56629f658,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.18462168
+      objectReference: {fileID: 0}
+    - target: {fileID: 70727573866155366, guid: b61bac54981057b4cbbcb6e56629f658,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.5592434
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 70727573866155366, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: b61bac54981057b4cbbcb6e56629f658, type: 2}
   m_IsPrefabParent: 0

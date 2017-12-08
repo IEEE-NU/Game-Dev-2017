@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Script : MonoBehaviour {
+public class Player : MonoBehaviour {
 
     // Maximum speed allowed for an enemy
     [SerializeField] private float m_MaxSpeed;
-    Vector2 centerPoint = new Vector2(0f, 0f);
 
     [SerializeField] public float MoveSpeed = 10;
     [SerializeField] public float RotateSpeed = 40;

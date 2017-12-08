@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private GameObject m_AsteroidPrefab;
 
     // Max enemies for debugging intially ***
-    private const int MAX_ASTEROIDS = 5;
+    private const int MAX_ASTEROIDS = 100;
 
     // Current amount of enemies in the game
 	private int m_CurrentAsteroids = 0;
@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour {
     private float m_TimeSinceLastAsteroid = 0;
 
     // How frequently an asteroid should spawn
-    private float m_AddAsteroidTime = 2;
+    [SerializeField] private float m_AddAsteroidTime;
 
     // Resets the game such that there is only one asteroid
     public void ResetGame()

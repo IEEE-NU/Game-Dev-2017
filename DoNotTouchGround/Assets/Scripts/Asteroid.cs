@@ -31,7 +31,7 @@ public class Asteroid : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col) // Destroy when collided with asteroid or player
     {
-        Debug.Log("I got hit!");
+        Debug.Log("An Asteroid got hit!");
         Destroy(this.gameObject);
     }
 

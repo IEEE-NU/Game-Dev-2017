@@ -20,6 +20,8 @@ public class Player : MonoBehaviour {
 
     }
 
+ 
+
     // Update is called once per frame
     void Update () {
 	    // Amount to Move
@@ -30,5 +32,11 @@ public class Player : MonoBehaviour {
         //transform.Translate(Vector2.up * MoveForward);
 	    m_RigidBody.AddRelativeForce(Vector2.up * MoveForward);
         transform.Rotate(Vector3.back * MoveRotate);
+    }
+
+    void OnCollisionEnter2D(Collision2D col) // Destroy when collided with asteroid or player
+    {
+        Debug.Log("The Player got hit!");
+        //Destroy(this.gameObject);
     }
 }

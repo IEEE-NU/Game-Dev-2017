@@ -122,12 +122,12 @@ Prefab:
     - target: {fileID: 224297716570428978, guid: dd9cce67f9852834e8b1b964dc9348bd,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 266
+      value: 183.5
       objectReference: {fileID: 0}
     - target: {fileID: 224297716570428978, guid: dd9cce67f9852834e8b1b964dc9348bd,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 199.5
+      value: 137.5
       objectReference: {fileID: 0}
     - target: {fileID: 224297716570428978, guid: dd9cce67f9852834e8b1b964dc9348bd,
         type: 2}
@@ -432,7 +432,51 @@ Prefab:
     - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
         type: 2}
       propertyPath: m_Projectile_Speed
-      value: 500
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: RotateSpeed
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: MoveSpeed
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: m_MaxSpeed
+      value: 1e+32
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: m_Projectile_Prefab_One
+      value: 
+      objectReference: {fileID: 1903784782429800, guid: c3179c2a53b976b4bb1c8599bb7c22e9,
+        type: 2}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: m_Projectile_Prefab_Two
+      value: 
+      objectReference: {fileID: 1202018873036892, guid: e2df73c6c4b7c6943b6aa75721fa597a,
+        type: 2}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: m_Projectile_Prefab_Three
+      value: 
+      objectReference: {fileID: 1177755768849616, guid: 00a2f129a38f5674d9a600fc75bbd9d6,
+        type: 2}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: m_Projectile_Prefab_Four
+      value: 
+      objectReference: {fileID: 1086963040829972, guid: 3a199a15b4ddf7d4188f9797d287232a,
+        type: 2}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: m_Projectile_Force
+      value: 4000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca3d14813eb0ee641ae82ae404b9b1b0, type: 2}

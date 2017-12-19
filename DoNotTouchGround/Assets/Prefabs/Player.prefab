@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 60385752100435824}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,12 +88,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 882212003e73fd548a75f86ce78b4d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 500
-  MoveSpeed: 200
-  RotateSpeed: 100
-  m_Projectile_Speed: 3
+  m_MaxSpeed: 1e+32
+  MoveSpeed: 800
+  RotateSpeed: 400
+  m_Projectile_Force: 4000
+  m_Planet: {fileID: 0}
   Projectile_List: []
-  m_Projectile_Prefab: {fileID: 1903784782429800, guid: c3179c2a53b976b4bb1c8599bb7c22e9,
+  m_Projectile_Prefab_One: {fileID: 1903784782429800, guid: c3179c2a53b976b4bb1c8599bb7c22e9,
+    type: 2}
+  m_Projectile_Prefab_Two: {fileID: 1202018873036892, guid: e2df73c6c4b7c6943b6aa75721fa597a,
+    type: 2}
+  m_Projectile_Prefab_Three: {fileID: 1177755768849616, guid: 00a2f129a38f5674d9a600fc75bbd9d6,
+    type: 2}
+  m_Projectile_Prefab_Four: {fileID: 1086963040829972, guid: 3a199a15b4ddf7d4188f9797d287232a,
     type: 2}
 --- !u!212 &212776331671660544
 SpriteRenderer:
@@ -128,7 +135,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 58067778ef336fb468381a677b0af470, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -146,7 +153,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1185010569416506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.4248, y: -9.835501, z: 0}
+  m_LocalPosition: {x: -36.7, y: -23.8, z: 0}
   m_LocalScale: {x: 3.6748095, y: 9.230428, z: 0.3616939}
   m_Children: []
   m_Father: {fileID: 0}
@@ -154,6 +161,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.4248, y: -9.835501}
+  m_AnchoredPosition: {x: -36.7, y: -23.8}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Nigeria
+  - Planet
+  - Projectile
+  - asteroid
   layers:
   - Default
   - TransparentFX
@@ -14,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - Planet
   - 
   - 
   - 
@@ -39,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 16341181
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

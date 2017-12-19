@@ -13,6 +13,8 @@ public class Player : MonoBehaviour {
 
     [SerializeField] private float m_Projectile_Force = 3;
 
+    [SerializeField] private GameObject m_Planet;
+
     private Rigidbody2D m_RigidBody;
     public List<GameObject> Projectile_List = new List<GameObject>();
 
@@ -21,10 +23,17 @@ public class Player : MonoBehaviour {
     public GameObject m_Projectile_Prefab_Three;
     public GameObject m_Projectile_Prefab_Four;
 
+    [SerializeField] private float m_Xedge = 50;
+    [SerializeField] private float m_Yedge = 50;
+
 
     private void Start()
     {
         m_RigidBody = this.GetComponent<Rigidbody2D>();
+
+        //Ignores collision between player and planet
+                //Physics2D.IgnoreCollision(GetComponent<Collider2D>(), m_Planet.GetComponent<Collider2D>());
+        Physics2D.IgnoreLayerCollision( 8, 9);
     }
 
 
@@ -105,7 +114,29 @@ public class Player : MonoBehaviour {
             }
         }
 
-        
+
+
+        // X axis
+        if (transform.position.x <= -m_Xedge)
+        {
+            transform.position = new Vector2(-m_Xedge, transform.position.y);
+        }
+        else if (transform.position.x >= m_Xedge)
+        {
+            transform.position = new Vector2(m_Xedge, transform.position.y);
+        }
+
+        // Y axis
+        if (transform.position.y <= -m_Yedge)
+        {
+            transform.position = new Vector2(transform.position.x, -m_Yedge);
+        }
+        else if (transform.position.y >= m_Yedge)
+        {
+            transform.position = new Vector2(transform.position.x, m_Yedge);
+        }
+
+
     }
 
     void OnCollisionEnter2D(Collision2D col) // Destroy when collided with asteroid or player

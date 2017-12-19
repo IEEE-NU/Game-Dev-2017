@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour {
         // Set the singleton instance
         if (Instance == null)
             Instance = this;
-
         // Reset the game to its initial state
     }
 

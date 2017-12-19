@@ -26,6 +26,9 @@ public class Player : MonoBehaviour {
     [SerializeField] private float m_Xedge = 50;
     [SerializeField] private float m_Yedge = 50;
 
+    private LineRenderer lineRenderer;
+    [SerializeField] private Transform laserHit;
+
 
     private void Start()
     {
@@ -33,7 +36,8 @@ public class Player : MonoBehaviour {
 
         //Ignores collision between player and planet
                 //Physics2D.IgnoreCollision(GetComponent<Collider2D>(), m_Planet.GetComponent<Collider2D>());
-        Physics2D.IgnoreLayerCollision( 8, 9);
+        Physics2D.IgnoreLayerCollision(8, 9);
+
     }
 
 
@@ -135,7 +139,6 @@ public class Player : MonoBehaviour {
         {
             transform.position = new Vector2(transform.position.x, m_Yedge);
         }
-
 
     }
 

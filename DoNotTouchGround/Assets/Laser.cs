@@ -19,6 +19,7 @@ public class Laser : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+
         if (Input.GetButtonDown("Jump"))
         {
             StopCoroutine("FireLaser");
@@ -27,12 +28,15 @@ public class Laser : MonoBehaviour {
 
     }
 
+    //CoRoutine
     IEnumerator FireLaser()
-    {
+    {   
+        //make the line visible
         lineRenderer.enabled = true;
 
         while (Input.GetButton("Jump"))
-        {
+        {   
+            //Makes a new ray that the laser will be rendered upon
             Ray2D ray = new Ray2D(transform.position, transform.up);
             RaycastHit2D hit;
 
@@ -45,14 +49,16 @@ public class Laser : MonoBehaviour {
                 lineRenderer.SetPosition(1, hit.point);
                 if (hit.rigidbody)
                 {
+                    //if the raycast hits something, change the end point of the laser
                     Debug.Log("I'm Hitting something with my laser");
                     hit.rigidbody.AddForceAtPosition(transform.up * 50, hit.point);
                 }
             }
             else
+            {
+                //if there is no hit, render along the ray
                 lineRenderer.SetPosition(1, ray.GetPoint(distance));
-
-
+            }
 
             yield return null;
         }

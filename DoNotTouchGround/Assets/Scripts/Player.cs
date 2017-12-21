@@ -5,28 +5,36 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    // Maximum speed allowed for an enemy
+    // Maximum speed allowed for player
     [SerializeField] private float m_MaxSpeed;
 
+    // Amount of force applied to the player every frame
     [SerializeField] public float MoveSpeed = 10;
     [SerializeField] public float RotateSpeed = 40;
 
+    // Amount of force to apply to shot projectile
     [SerializeField] private float m_Projectile_Force = 3;
 
+    // Gets the game object so that the game knows what layers not collide in
     [SerializeField] private GameObject m_Planet;
 
     private Rigidbody2D m_RigidBody;
+    //List of projectiles when they are instantiated
     public List<GameObject> Projectile_List = new List<GameObject>();
 
+    //Gets the specific projectile prefabs to use
     public GameObject m_Projectile_Prefab_One;
     public GameObject m_Projectile_Prefab_Two;
     public GameObject m_Projectile_Prefab_Three;
     public GameObject m_Projectile_Prefab_Four;
 
+    //The bounds that the player can move in
     [SerializeField] private float m_Xedge = 50;
     [SerializeField] private float m_Yedge = 50;
 
+
     private LineRenderer lineRenderer;
+    //Keeps track of where the raycastHit is actually encountering a collider
     [SerializeField] private Transform laserHit;
 
 
@@ -34,22 +42,25 @@ public class Player : MonoBehaviour {
     {
         m_RigidBody = this.GetComponent<Rigidbody2D>();
 
-        //Ignores collision between player and planet
-                //Physics2D.IgnoreCollision(GetComponent<Collider2D>(), m_Planet.GetComponent<Collider2D>());
+        //Ignores collision between player and planet layers
         Physics2D.IgnoreLayerCollision(8, 9);
-
     }
 
 
     // Update is called once per frame
     void Update () {
 
+        //Rotates the player 
 	    float MoveRotate = Input.GetAxis("Horizontal") * RotateSpeed * Time.deltaTime;
+
+
         float MoveForward = 0;
         GameObject Projectile = null;
 
+        //applies a foward force to the player depending on what button is hit
         if (Input.GetButton("Fire.25"))
         {
+
             MoveForward = (float).25 * MoveSpeed * Time.deltaTime;
             Projectile = Instantiate(m_Projectile_Prefab_One, transform.TransformPoint(-Vector3.up), Quaternion.identity);
 
@@ -85,18 +96,18 @@ public class Player : MonoBehaviour {
             Projectile_List.Add(Projectile);
         }
 
-        // Move the player
+        // Actually move the player
         m_RigidBody.AddRelativeForce(Vector2.up * MoveForward);
         transform.Rotate(Vector3.back * MoveRotate);
 
         
-
+        //Deletes projectiles based on position relative to camera
         for (int i = 0; i < Projectile_List.Count; i++)
         {
             GameObject goProjectile = Projectile_List[i];
             if (goProjectile != null)
             {
-                //legacy way of moving projectile
+                //legacy way of moving projectile with transforms
                 //goProjectile.transform.Translate(-transform.up * Time.deltaTime * m_Projectile_Speed);
 
                 Vector3 projectileScreenPosition = Camera.main.WorldToScreenPoint(goProjectile.transform.position);
@@ -105,14 +116,14 @@ public class Player : MonoBehaviour {
                 {
                     DestroyObject(goProjectile);
                     Projectile_List.Remove(goProjectile);
-                    //Debug.Log("Your projectile got destroyed from the y bounds bitch");
+                    //Debug.Log("Your projectile got destroyed from the y bounds");
                 }
 
                 if (projectileScreenPosition.x >= Screen.width + 50 || projectileScreenPosition.x <= -50)
                 {
                     DestroyObject(goProjectile);
                     Projectile_List.Remove(goProjectile);
-                    //Debug.Log("Your projectile got destroyed from the x bounds bitch");
+                    //Debug.Log("Your projectile got destroyed from the x bounds");
                 }
 
             }
@@ -120,7 +131,7 @@ public class Player : MonoBehaviour {
 
 
 
-        // X axis
+        // X axis bounds for player
         if (transform.position.x <= -m_Xedge)
         {
             transform.position = new Vector2(-m_Xedge, transform.position.y);
@@ -130,7 +141,7 @@ public class Player : MonoBehaviour {
             transform.position = new Vector2(m_Xedge, transform.position.y);
         }
 
-        // Y axis
+        // Y axis bounds for player
         if (transform.position.y <= -m_Yedge)
         {
             transform.position = new Vector2(transform.position.x, -m_Yedge);

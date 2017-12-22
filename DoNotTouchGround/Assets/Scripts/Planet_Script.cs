@@ -3,40 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Planet_Script : MonoBehaviour {
-    public int life = 3;
+    public int life = 100;
+    private GameManager gameManager;
+    private int damage = 20;
+
+    private float greenIncrment = 0f;
 
     // Use this for initialization
     void Start () {
-		
-	}
+ 
+        GameObject gameControllerObject = GameObject.FindWithTag("GameManager");
+        if (gameControllerObject != null)
+        {
+            gameManager = gameControllerObject.GetComponent<GameManager>();
+        }
+        else
+        {
+            Debug.Log("cant fine 'GameManager' object");
+        }
+
+        GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "asteroid")
+    public void PlanetHitByAsteroid()  
         {
             Debug.Log("The planet was hit by an asteroid");
 
-            life--;
-            if (life == 2)
-            {
-                GetComponent<SpriteRenderer>().color = new Color(1f, 0.30196078f, 0.30196078f);
-            }
+            life -= damage;
+            gameManager.SubtractHealth(damage);
 
-            if (life == 1)
-            {
-                GetComponent<SpriteRenderer>().color = new Color(0.388235229f, 0.3372549f, 1f);
-            }
+            greenIncrment += .2f;
+            GetComponent<SpriteRenderer>().color = new Color(0f, 1f - greenIncrment, 0f);
 
             if (life <= 0)
-            {
-                Destroy(gameObject);
-            }
+                {
+                    gameManager.GameOver();
+                    gameObject.SetActive(false);
+                }
         }
 
-    }
+    
 }

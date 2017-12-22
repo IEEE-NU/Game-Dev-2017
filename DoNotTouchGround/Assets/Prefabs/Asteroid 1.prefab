@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 50787665745598278}
   - component: {fileID: 60039937881895644}
   - component: {fileID: 114722494192150712}
+  - component: {fileID: 114139941268192428}
   m_Layer: 0
   m_Name: Asteroid 1
-  m_TagString: asteroid
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +60,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -77,6 +78,18 @@ PolygonCollider2D:
     - - {x: 0, y: 0.5}
       - {x: -0.4330127, y: -0.25000003}
       - {x: 0.43301272, y: -0.24999996}
+--- !u!114 &114139941268192428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243401395870960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49c76e57da3fc14694512530008d6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 0
 --- !u!114 &114722494192150712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -88,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc6d22a8b46b5c948844416721c0df9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 1000
+  m_MaxSpeed: 1500
   m_MaxHealth: 1
 --- !u!212 &212914427068455910
 SpriteRenderer:

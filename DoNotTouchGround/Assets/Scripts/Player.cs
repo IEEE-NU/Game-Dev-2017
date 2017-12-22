@@ -44,6 +44,8 @@ public class Player : MonoBehaviour {
 
         //Ignores collision between player and planet layers
         Physics2D.IgnoreLayerCollision(8, 9);
+
+
     }
 
 
@@ -112,14 +114,14 @@ public class Player : MonoBehaviour {
 
                 Vector3 projectileScreenPosition = Camera.main.WorldToScreenPoint(goProjectile.transform.position);
 
-                if (projectileScreenPosition.y >= Screen.height + 50 || projectileScreenPosition.y <= -50)
+                if (projectileScreenPosition.y >= Screen.height || projectileScreenPosition.y <= 0)
                 {
                     DestroyObject(goProjectile);
                     Projectile_List.Remove(goProjectile);
                     //Debug.Log("Your projectile got destroyed from the y bounds");
                 }
 
-                if (projectileScreenPosition.x >= Screen.width + 50 || projectileScreenPosition.x <= -50)
+                if (projectileScreenPosition.x >= Screen.width|| projectileScreenPosition.x <= 0)
                 {
                     DestroyObject(goProjectile);
                     Projectile_List.Remove(goProjectile);
@@ -129,33 +131,28 @@ public class Player : MonoBehaviour {
             }
         }
 
+       
 
+        //// X axis bounds for player
+        //if (transform.position.x <= -m_Xedge)
+        //{
+        //    transform.position = new Vector2(-m_Xedge, transform.position.y);
+        //}
+        //else if (transform.position.x >= m_Xedge)
+        //{
+        //    transform.position = new Vector2(m_Xedge, transform.position.y);
+        //}
 
-        // X axis bounds for player
-        if (transform.position.x <= -m_Xedge)
-        {
-            transform.position = new Vector2(-m_Xedge, transform.position.y);
-        }
-        else if (transform.position.x >= m_Xedge)
-        {
-            transform.position = new Vector2(m_Xedge, transform.position.y);
-        }
-
-        // Y axis bounds for player
-        if (transform.position.y <= -m_Yedge)
-        {
-            transform.position = new Vector2(transform.position.x, -m_Yedge);
-        }
-        else if (transform.position.y >= m_Yedge)
-        {
-            transform.position = new Vector2(transform.position.x, m_Yedge);
-        }
+        //// Y axis bounds for player
+        //if (transform.position.y <= -m_Yedge)
+        //{
+        //    transform.position = new Vector2(transform.position.x, -m_Yedge);
+        //}
+        //else if (transform.position.y >= m_Yedge)
+        //{
+        //    transform.position = new Vector2(transform.position.x, m_Yedge);
+        //}
 
     }
 
-    void OnCollisionEnter2D(Collision2D col) // Destroy when collided with asteroid or player
-    {
-        Debug.Log("The Player got hit!");
-        //Destroy(this.gameObject);
-    }
 }

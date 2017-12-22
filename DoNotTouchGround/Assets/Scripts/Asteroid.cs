@@ -26,7 +26,7 @@ public class Asteroid : MonoBehaviour
 		 * random direction at a random speed.
 		 */
 
-        float magnitude = Random.Range(0.25f, 1f) * m_MaxSpeed;
+        float magnitude = Random.Range(0.5f, 1f) * m_MaxSpeed;
 
         var xForce = asteroidDirection.x * magnitude;
         var yForce = asteroidDirection.y * magnitude;

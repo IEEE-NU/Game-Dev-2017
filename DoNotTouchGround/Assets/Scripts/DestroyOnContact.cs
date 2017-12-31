@@ -17,7 +17,7 @@ public class DestroyOnContact : MonoBehaviour {
         }
         else
         {
-            Debug.Log("cant fine 'GameManager' object");
+            Debug.Log("cant find 'GameManager' object");
         }
 
         GameObject planetObject = GameObject.FindWithTag("Planet");
@@ -27,7 +27,7 @@ public class DestroyOnContact : MonoBehaviour {
         }
         else
         {
-            Debug.Log("cant fine 'Planet' object");
+            Debug.Log("cant find 'Planet' object");
         }
     }
 

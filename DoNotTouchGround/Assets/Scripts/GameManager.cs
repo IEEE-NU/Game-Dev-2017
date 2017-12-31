@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour {
         //some issues with using GetKeyDown. Maybe cause its not checking on the right frames?
         if (gameover)
         {
-            Debug.Log("Game over state is true");
+            //Debug.Log("Game over state is true");
 
             if (Input.GetKey(KeyCode.P))
             {
@@ -131,6 +131,8 @@ public class GameManager : MonoBehaviour {
             else
                 y = -height;
             z = 0f;
+
+            
         }
         else
         {
@@ -142,6 +144,9 @@ public class GameManager : MonoBehaviour {
             z = 0f;
         }
         Vector3 location = new Vector3(x, y, z);
+
+        Debug.Log("Ast Spawn loc : " + location);
+
         return location;
 
     }

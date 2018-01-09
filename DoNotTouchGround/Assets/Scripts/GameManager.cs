@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour {
     }
 
     // Return random vector3 values to spawn asteroids
-    private Vector3 spawnLocation()
+    private Vector3 SpawnLocation()
     {
         float x, y, z;
         float height = 175f; //m_MainCamera.orthographicSize;
@@ -159,7 +159,9 @@ public class GameManager : MonoBehaviour {
         if (m_CurrentAsteroids >= MAX_ASTEROIDS) return;
 
         // Otherwise, add an asteroid to the game.
-        Instantiate(m_AsteroidPrefab, spawnLocation(), Quaternion.identity);
+        GameObject temp = Instantiate(m_AsteroidPrefab, SpawnLocation(), Quaternion.identity);
+        Transform tempLoc = temp.GetComponent<Transform>();
+        tempLoc.position = SpawnLocation(); // hack fix until reason behind is found why instantiate is not setting the given Vector3 object
         m_CurrentAsteroids += 1;
     }
 

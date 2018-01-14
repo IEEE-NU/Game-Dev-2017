@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
     public Text healthText;
     public Text restartText;
     public Text gameOverText;
+    public Text overheatText;
 
     //keeps track if game is over
     private bool gameover = false;
@@ -68,6 +69,8 @@ public class GameManager : MonoBehaviour {
         // Reset the game to its initial state
         gameOverText.text = "";
         restartText.text = "";
+        scoreText.text = "Score: " + score;
+        healthText.text = "Health: " + healthPoints;
     }
 
     // Called once per frame
@@ -76,7 +79,7 @@ public class GameManager : MonoBehaviour {
         //check if player is off the screen. If so, deactivate it and call gameover
         if (PlayerOffScreen())
         {
-            Debug.Log("The PLayer is off screen");
+            Debug.Log("The Player is off screen");
             m_player.SetActive(false);
             GameOver();
         }
@@ -103,16 +106,11 @@ public class GameManager : MonoBehaviour {
         m_TimeSinceLastAsteroid += Time.deltaTime;
 
         // If the time since the last asteroid is less than the spawn interval, do nothing.
-        if (m_TimeSinceLastAsteroid <= m_AddAsteroidTime) return; //BECAREFUL OF THIS RETURN!!! IT WAS SCREWING UP MY OTHER CALLS
+        if (m_TimeSinceLastAsteroid <= m_AddAsteroidTime) return; //BE CAREFUL OF THIS RETURN!!! IT WAS SCREWING UP MY OTHER CALLS
 
         // Otherwise, add an asteroid and reset the timer!
         m_TimeSinceLastAsteroid = 0;
         AddEnemy();
-
-        
-        
-
-       
        
     }
 
@@ -197,6 +195,19 @@ public class GameManager : MonoBehaviour {
     public void updateRestartText()
     {
         restartText.text = "Please hold p to restart!";
+    }
+
+    public void updateOverheatText(float heat)
+    {
+        overheatText.text = "Overheat: " + Mathf.Round(heat);
+        if (heat == 100f)
+        {
+            overheatText.color = new Color(1f, 0.0f, 0.0f);
+        }
+        else
+        {
+            overheatText.color = new Color(1f, 1f, 1f);
+        }
     }
 
 

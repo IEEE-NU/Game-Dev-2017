@@ -37,6 +37,10 @@ public class Player : MonoBehaviour {
     //Keeps track of where the raycastHit is actually encountering a collider
     [SerializeField] private Transform laserHit;
 
+    [SerializeField] public Overheat overheatScript;
+    [SerializeField] public GameManager gameManager;
+
+    public bool paused = false;
 
     private void Start()
     {
@@ -52,8 +56,23 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+        //if (overheatScript.getHeat() >= 100)
+        //{
+        //    Debug.Log("Gun is overheated");
+        //    Debug.Log(overheatScript.getHeat());
+        //}
+        //else
+        //{
+        //    Debug.Log("Gun is ready to fire");
+        //}
+
+        if (paused)
+            return;
+
+        Debug.Log(overheatScript.getHeat());
+
         //Rotates the player 
-	    float MoveRotate = Input.GetAxis("Horizontal") * RotateSpeed * Time.deltaTime;
+        float MoveRotate = Input.GetAxis("Horizontal") * RotateSpeed * Time.deltaTime;
 
 
         float MoveForward = 0;
@@ -96,6 +115,16 @@ public class Player : MonoBehaviour {
             Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
 
             Projectile_List.Add(Projectile);
+
+            overheatScript.AddHeat();
+        }
+
+        gameManager.updateOverheatText(overheatScript.getHeat());
+
+        if (overheatScript.isOverheated())
+        {
+            StartCoroutine("Delay");
+            overheatScript.resetHeat();
         }
 
         // Actually move the player
@@ -153,6 +182,13 @@ public class Player : MonoBehaviour {
         //    transform.position = new Vector2(transform.position.x, m_Yedge);
         //}
 
+    }
+
+    IEnumerator Delay()
+    {
+        paused = true;
+        yield return new WaitForSeconds(3);
+        paused = false;
     }
 
 }

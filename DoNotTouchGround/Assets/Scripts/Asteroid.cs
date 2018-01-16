@@ -8,8 +8,8 @@ public class Asteroid : MonoBehaviour
     [SerializeField] private float m_MaxSpeed;
 
     // Health allowed for an enemy
-    [SerializeField] private int m_MaxHealth;
-     private int m_CurrHealth = 0;
+    [SerializeField] private float m_MaxHealth;
+     private float m_CurrHealth = 0;
 
     // Called when the enemy is initialized
     private void Start()
@@ -38,19 +38,22 @@ public class Asteroid : MonoBehaviour
         if (col.gameObject.name.Contains("Projectile"))
         {
             Destroy(col.gameObject);
-            m_CurrHealth++;
-
-            if (m_CurrHealth >= m_MaxHealth)
-                Destroy(this.gameObject);
+			TakeDamage (1f);
         }
         else
         {
-                    Debug.Log("An Asteroid got hit!");
-        Destroy(this.gameObject);
+			Debug.Log("An Asteroid got hit!");
+        	Destroy(this.gameObject);
         }
 
 
     }
+
+	public void TakeDamage(float damage) {
+		m_CurrHealth += damage;
+		if (m_CurrHealth >= m_MaxHealth)
+			Destroy(this.gameObject);
+	}
 
     void OnBecameInvisible()
     {

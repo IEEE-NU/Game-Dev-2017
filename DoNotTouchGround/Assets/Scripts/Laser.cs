@@ -7,6 +7,7 @@ public class Laser : MonoBehaviour {
     private LineRenderer lineRenderer;
     [SerializeField] private Transform laserHit;
     [SerializeField] private int distance = 10000;
+	[SerializeField] private float laserDamageRate = 2.0f;
 
     // Use this for initialization
     void Start () {
@@ -52,6 +53,7 @@ public class Laser : MonoBehaviour {
                     //if the raycast hits something, change the end point of the laser
                     Debug.Log("I'm Hitting something with my laser");
                     hit.rigidbody.AddForceAtPosition(transform.up * 50, hit.point);
+					hit.rigidbody.gameObject.GetComponent<Asteroid> ().TakeDamage (Time.deltaTime * laserDamageRate);
                 }
             }
             else

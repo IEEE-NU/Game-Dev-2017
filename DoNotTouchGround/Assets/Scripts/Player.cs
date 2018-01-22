@@ -69,7 +69,7 @@ public class Player : MonoBehaviour {
         if (paused)
             return;
 
-        Debug.Log(overheatScript.getHeat());
+        //Debug.Log(overheatScript.getHeat());
 
         //Rotates the player 
         float MoveRotate = Input.GetAxis("Horizontal") * RotateSpeed * Time.deltaTime;

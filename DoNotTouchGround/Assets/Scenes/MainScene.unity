@@ -4173,6 +4173,16 @@ Prefab:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1272671005}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: m_Projectile_Force
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: MoveSpeed
+      value: 1600
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca3d14813eb0ee641ae82ae404b9b1b0, type: 2}
   m_IsPrefabParent: 0
@@ -4437,9 +4447,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHeat: 0
-  coolRate: 20
+  coolRate: 10
   maxHeat: 100
-  heatToAdd: 1
 --- !u!4 &1222429062 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4917414174802040, guid: ca3d14813eb0ee641ae82ae404b9b1b0,

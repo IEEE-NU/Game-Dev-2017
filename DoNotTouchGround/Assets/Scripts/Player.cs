@@ -88,7 +88,7 @@ public class Player : MonoBehaviour {
             Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
 
             Projectile_List.Add(Projectile);
-            overheatScript.AddHeat();
+            overheatScript.AddHeat(.25f);
             //Debug.Log("you are pressing the fire .25 key");
         }
         else if (Input.GetButton("Fire.50"))
@@ -98,7 +98,7 @@ public class Player : MonoBehaviour {
 
             Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
             Projectile_List.Add(Projectile);
-            overheatScript.AddHeat();
+            overheatScript.AddHeat(.5f);
         }
         else if (Input.GetButton("Fire.75"))
         {
@@ -108,7 +108,7 @@ public class Player : MonoBehaviour {
             Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
 
             Projectile_List.Add(Projectile);
-            overheatScript.AddHeat();
+            overheatScript.AddHeat(.75f);
         }
         else if (Input.GetButton("Fire1.00"))
         {
@@ -119,7 +119,7 @@ public class Player : MonoBehaviour {
 
             Projectile_List.Add(Projectile);
 
-            overheatScript.AddHeat();
+            overheatScript.AddHeat(1f);
         }
 
         gameManager.updateOverheatText(overheatScript.getHeat());

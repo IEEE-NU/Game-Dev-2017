@@ -330,7 +330,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1748419711
+  randomSeed: -438480432
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3642,7 +3642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7727fd6e909ff7946923235895e4cbdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starColor: {r: 0, g: 1, b: 0.006896496, a: 0}
+  starColor: {r: 1, g: 1, b: 0.006896496, a: 0.478}
   starsMax: 150
   starSize: 1
   starDistance: 120
@@ -5440,7 +5440,7 @@ MonoBehaviour:
   lockOnCam: 0
   backgroundSize: 100
   paralaxSpeed: 1
-  innateSpeed: {x: 0, y: 0, z: 0}
+  innateSpeed: {x: 4, y: 0, z: 0}
 --- !u!1 &2039782233
 GameObject:
   m_ObjectHideFlags: 0

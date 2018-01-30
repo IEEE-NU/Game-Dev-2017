@@ -33,6 +33,12 @@ public class GameManager : MonoBehaviour {
     // get player object
     [SerializeField] private GameObject m_player;
 
+    //get the barScript so that we can change the bar fill
+    [SerializeField] private BarScript barScript;
+
+    //get the barScript so that we can change the bar fill
+    [SerializeField] private Overheat overheatScript;
+
     // Max enemies for debugging intially ***
     private const int MAX_ASTEROIDS = 100;
 
@@ -76,6 +82,9 @@ public class GameManager : MonoBehaviour {
     // Called once per frame
     void Update () {
 
+        //updates the overheat bar
+        updateOverheatBar();
+
         //check if player is off the screen. If so, deactivate it and call gameover
         if (PlayerOffScreen())
         {
@@ -111,7 +120,10 @@ public class GameManager : MonoBehaviour {
         // Otherwise, add an asteroid and reset the timer!
         m_TimeSinceLastAsteroid = 0;
         AddEnemy();
-       
+
+
+
+
     }
 
     // Return random vector3 values to spawn asteroids
@@ -208,6 +220,15 @@ public class GameManager : MonoBehaviour {
         {
             overheatText.color = new Color(1f, 1f, 1f);
         }
+    }
+
+    public void updateOverheatBar()
+    {
+        //barScript.max = overheatScript.getMaxHeat();
+        //barScript.min = overheatScript.getMinHeat();
+        //barScript.currPercentage = overheatScript.getHeat() / overheatScript.getMaxHeat();
+
+        barScript.BarHandler(0, 1, overheatScript.getHeat() / overheatScript.getMaxHeat());
     }
 
 

@@ -7,7 +7,10 @@ public class Overheat : MonoBehaviour
     [SerializeField] private float currentHeat = 0;
     [SerializeField] private float coolRate = 20;
     [SerializeField] private float maxHeat = 100;
+    [SerializeField] private float minHeat = 0;
     //[SerializeField] private float heatToAdd = 1;
+
+    //[SerializeField] private BarScript barScript;
 
     // Update is called once per frame
     void Update ()
@@ -33,6 +36,16 @@ public class Overheat : MonoBehaviour
     public float getHeat()
     {
         return Mathf.Min(this.currentHeat, maxHeat);
+    }
+
+    public float getMaxHeat()
+    {
+        return  maxHeat;
+    }
+
+    public float getMinHeat()
+    {
+        return  minHeat;
     }
 
     public void resetHeat()

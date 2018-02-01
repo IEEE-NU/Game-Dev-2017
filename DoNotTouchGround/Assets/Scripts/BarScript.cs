@@ -13,11 +13,11 @@ public class BarScript : MonoBehaviour
         fillAmount = Mathf.Lerp(min, max, currPercentage);
         content.fillAmount = fillAmount;
 
-        Debug.Log(min);
+        /*Debug.Log(min);
         Debug.Log(max);
         Debug.Log(currPercentage);
         Debug.Log(fillAmount);
-        Debug.Log("This is barScript");
+        Debug.Log("This is barScript");*/
 
     }
 

@@ -51,9 +51,9 @@ public class Laser : MonoBehaviour {
                 if (hit.rigidbody)
                 {
                     //if the raycast hits something, change the end point of the laser
-                    Debug.Log("I'm Hitting something with my laser");
+                    // Debug.Log("I'm Hitting something with my laser");
                     hit.rigidbody.AddForceAtPosition(transform.up * 50, hit.point);
-					hit.rigidbody.gameObject.GetComponent<Asteroid> ().TakeDamage (Time.deltaTime * laserDamageRate);
+					hit.rigidbody.gameObject.GetComponent<Attackable> ().TakeDamage (Time.deltaTime * laserDamageRate);
                 }
             }
             else

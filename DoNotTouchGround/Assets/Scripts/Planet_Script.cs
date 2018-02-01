@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Planet_Script : MonoBehaviour {
-    public int life = 100;
+public class Planet_Script : Attackable {
     private GameManager gameManager;
-    private int damage = 20;
 
     private float greenIncrment = 0f;
 
     // Use this for initialization
     void Start () {
- 
         GameObject gameControllerObject = GameObject.FindWithTag("GameManager");
         if (gameControllerObject != null)
         {
@@ -21,32 +18,24 @@ public class Planet_Script : MonoBehaviour {
         {
             Debug.Log("cant fine 'GameManager' object");
         }
-
         GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f);
-
+		m_currHealth = m_MaxHealth;
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update () {}
 
-    public void PlanetHitByAsteroid()  
+	public override void TakeDamage(float damage)  
         {
-            Debug.Log("The planet was hit by an asteroid");
+			m_currHealth -= damage;
+			gameManager.SetHealth(m_currHealth);
+			float ratio = (m_currHealth / m_MaxHealth);
+			GetComponent<SpriteRenderer>().color = new Color(ratio,ratio,ratio);
 
-            life -= damage;
-            gameManager.SubtractHealth(damage);
-
-            greenIncrment += .2f;
-            GetComponent<SpriteRenderer>().color = new Color(0f, 1f - greenIncrment, 0f);
-
-            if (life <= 0)
+			if (m_currHealth <= 0)
                 {
                     gameManager.GameOver();
                     gameObject.SetActive(false);
                 }
-        }
-
-    
+        }    
 }

@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212741029019456156}
   - component: {fileID: 58407586569757488}
   - component: {fileID: 50509841271159072}
-  m_Layer: 8
+  - component: {fileID: 114942373369094952}
+  m_Layer: 0
   m_Name: Projectile Three
   m_TagString: Projectile
   m_Icon: {fileID: 0}
@@ -77,6 +78,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &114942373369094952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1177755768849616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4896c610d0239674aa84cba3879e1a0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_damage: 3
+  faction: player
 --- !u!212 &212741029019456156
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
+public class Player : Attackable {
 
     // Maximum speed allowed for player
     [SerializeField] private float m_MaxSpeed;
@@ -194,4 +194,12 @@ public class Player : MonoBehaviour {
         paused = false;
     }
 
+	public override void TakeDamage(float damage)
+	{
+		m_currHealth -= damage;
+		if (m_currHealth <= 0) {
+			gameObject.SetActive(false);
+			gameManager.GameOver ();
+		}
+	}
 }

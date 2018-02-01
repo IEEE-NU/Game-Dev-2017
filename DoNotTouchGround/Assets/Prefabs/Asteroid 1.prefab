@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 50787665745598278}
   - component: {fileID: 60039937881895644}
   - component: {fileID: 114722494192150712}
-  - component: {fileID: 114139941268192428}
+  - component: {fileID: 114270342217162892}
+  - component: {fileID: 114296681310503892}
   m_Layer: 0
   m_Name: Asteroid 1
   m_TagString: Asteroid
@@ -76,9 +77,9 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0, y: 0.5}
-      - {x: -0.4330127, y: -0.25000003}
-      - {x: 0.43301272, y: -0.24999996}
---- !u!114 &114139941268192428
+      - {x: -0.5, y: -0.4}
+      - {x: 0.5, y: -0.4}
+--- !u!114 &114270342217162892
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -86,10 +87,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1243401395870960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b49c76e57da3fc14694512530008d6e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 320fbf7cf19f37f4bae7092998b10a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 0
+  m_MaxHealth: 5
+  faction: enemy
+--- !u!114 &114296681310503892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243401395870960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4896c610d0239674aa84cba3879e1a0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_damage: 200
+  faction: none
 --- !u!114 &114722494192150712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -102,7 +117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 1500
-  m_MaxHealth: 1
 --- !u!212 &212914427068455910
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -162,6 +176,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -32, y: 5}
+  m_AnchoredPosition: {x: -85.8, y: 0.1}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -54,7 +54,7 @@ public class DestroyOnContact : MonoBehaviour {
         {
             Debug.Log("asteroid knows it hit the planet");
             Destroy(gameObject);
-            planet.PlanetHitByAsteroid();
+			planet.TakeDamage(20f);
         }
 
         //Debug.Log("something collided but didnt trigger is statements");

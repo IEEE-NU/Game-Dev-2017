@@ -155,7 +155,7 @@ public class GameManager : MonoBehaviour {
         }
         Vector3 location = new Vector3(x, y, z);
 
-        Debug.Log("Ast Spawn loc : " + location);
+        //Debug.Log("Ast Spawn loc : " + location);
 
         return location;
 
@@ -186,9 +186,9 @@ public class GameManager : MonoBehaviour {
         scoreText.text = "Score: " + score;
     }
 
-    public void SubtractHealth(int healthSubtracted)
+    public void SetHealth(float newHealth)
     {
-        healthPoints -= healthSubtracted;
+		healthPoints = (int)newHealth;
         UpdateHealth();
     }
 

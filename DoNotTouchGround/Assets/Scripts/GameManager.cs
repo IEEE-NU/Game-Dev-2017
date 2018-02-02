@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour {
     public Text restartText;
     public Text gameOverText;
     public Text overheatText;
+    public Text warningText;
 
     //keeps track if game is over
     private bool gameover = false;
@@ -77,6 +78,7 @@ public class GameManager : MonoBehaviour {
         restartText.text = "";
         scoreText.text = "Score: " + score;
         healthText.text = "Health: " + healthPoints;
+        warningText.text = "";
     }
 
     // Called once per frame
@@ -92,6 +94,13 @@ public class GameManager : MonoBehaviour {
             m_player.SetActive(false);
             GameOver();
         }
+        
+        // if player too close to edge, flash warning message
+        if (PlayerCloseToEdge())
+        {
+            updateWarningText();
+            
+        }
 
 
         //enable restart if game has gone to gameover
@@ -99,6 +108,9 @@ public class GameManager : MonoBehaviour {
         if (gameover)
         {
             //Debug.Log("Game over state is true");
+            
+            // Reset warning text so it's not in the way
+            warningText.text = "";
 
             if (Input.GetKey(KeyCode.P))
             {
@@ -246,6 +258,30 @@ public class GameManager : MonoBehaviour {
         }
 
     }
+
+    // If player comes within 60 units of screen edge, return true
+    bool PlayerCloseToEdge()
+    {
+        Vector3 playerScreenPosition = Camera.main.WorldToScreenPoint(m_player.transform.position);
+
+        if (Screen.height - playerScreenPosition.y <= 60 ||
+                            playerScreenPosition.y <= 60 ||
+             Screen.width - playerScreenPosition.x <= 60 ||
+                            playerScreenPosition.x <= 60)
+        {
+            return true;
+        }
+
+        return false;
+
+    }
+
+    public void updateWarningText()
+    {
+        warningText.text = "WARNING: You are leaving the battlefield!";
+    }
+    
+    
 
 }
 

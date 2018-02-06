@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Player : Attackable {
 
+    public float rotSpeed = 180f;
+
     // Maximum speed allowed for player
     [SerializeField] private float m_MaxSpeed;
 
@@ -72,7 +74,23 @@ public class Player : Attackable {
         //Debug.Log(overheatScript.getHeat());
 
         //Rotates the player 
-        float MoveRotate = Input.GetAxis("Horizontal") * RotateSpeed * Time.deltaTime;
+        //float MoveRotate = Input.GetAxis("Horizontal") * RotateSpeed * Time.deltaTime;
+        // ROTATE the ship.
+
+        // Grab our rotation quaternion
+        Quaternion rot = transform.rotation;
+
+        // Grab the Z euler angle
+        float z = rot.eulerAngles.z;
+
+        // Change the Z angle based on input
+        z -= Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
+
+        // Recreate the quaternion
+        rot = Quaternion.Euler(0, 0, z);
+
+        // Feed the quaternion into our rotation
+        transform.rotation = rot;
 
 
         float MoveForward = 0;
@@ -132,7 +150,7 @@ public class Player : Attackable {
 
         // Actually move the player
         m_RigidBody.AddRelativeForce(Vector2.up * MoveForward);
-        transform.Rotate(Vector3.back * MoveRotate);
+        //transform.Rotate(Vector3.back * MoveRotate);
 
         
         //Deletes projectiles based on position relative to camera

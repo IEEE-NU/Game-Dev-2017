@@ -49,7 +49,7 @@ public class Starfield : MonoBehaviour {
 
             if ((points[i].position - thisTranform.position).sqrMagnitude <= starClipDistanceSqr) {
                 float percentage = (points[i].position - thisTranform.position).sqrMagnitude / starClipDistanceSqr;
-                points[i].startColor = new Color(1, 1, 1, percentage);
+                points[i].startColor = new Color(starColor.r, starColor.g, starColor.b, percentage);
                 points[i].startSize = percentage * starSize;
             }
             GetComponent<ParticleSystem>().SetParticles(points, points.Length);

@@ -11,47 +11,65 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="GameManager.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="98" column="8" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+            <state relative-caret-position="386">
+              <caret line="102" column="93" lean-forward="false" selection-start-line="102" selection-start-column="93" selection-end-line="102" selection-end-column="93" />
               <folding>
-                <marker date="1517604140000" expanded="false" signature="6:135" ph="..." />
-                <marker date="1517604140000" expanded="true" signature="178:7820" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="1563:1776" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="1626:1681" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="1836:2271" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="2321:3930" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="2503:2637" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="2741:2807" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="2818:2958" ph="/* enable restart if game has gone to gameover ... */" />
-                <marker date="1517604140000" expanded="true" signature="2980:3414" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="3003:3112" ph="/* Debug.Log(&quot;Game over state is true&quot;); ... */" />
-                <marker date="1517604140000" expanded="true" signature="3189:3404" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="3424:3528" ph="/* Increment time since last asteroid by the time that has elapsed since ... */" />
-                <marker date="1517604140000" expanded="true" signature="4022:4862" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="4295:4512" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="4525:4727" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="4928:5451" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="5493:5557" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="5581:5637" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="5681:5750" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="5775:5840" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="5868:5998" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="6035:6103" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="6151:6420" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="6245:6325" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="6338:6414" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="6457:6765" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="6472:6666" ph="/* barScript.max = overheatScript.getMaxHeat(); ... */" />
-                <marker date="1517604140000" expanded="true" signature="6794:7169" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="7058:7103" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="7116:7162" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="7266:7686" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="7611:7656" ph="{...}" />
-                <marker date="1517604140000" expanded="true" signature="7723:7807" ph="{...}" />
+                <marker date="1517883751000" expanded="false" signature="6:135" ph="..." />
+                <marker date="1517883751000" expanded="true" signature="178:7981" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="1563:1776" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="1626:1681" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="1836:2271" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="2321:4091" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="2503:2637" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="2741:2794" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="2901:2959" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="2979:3119" ph="/* enable restart if game has gone to gameover ... */" />
+                <marker date="1517883751000" expanded="true" signature="3141:3575" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="3164:3273" ph="/* Debug.Log(&quot;Game over state is true&quot;); ... */" />
+                <marker date="1517883751000" expanded="true" signature="3350:3565" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="3585:3689" ph="/* Increment time since last asteroid by the time that has elapsed since ... */" />
+                <marker date="1517883751000" expanded="true" signature="4183:5023" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="4456:4673" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="4686:4888" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="5089:5612" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="5654:5718" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="5742:5798" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="5842:5911" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="5936:6001" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="6029:6159" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="6196:6264" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="6312:6581" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="6406:6486" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="6499:6575" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="6618:6926" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="6633:6827" ph="/* barScript.max = overheatScript.getMaxHeat(); ... */" />
+                <marker date="1517883751000" expanded="true" signature="6955:7330" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="7219:7264" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="7277:7323" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="7427:7847" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="7772:7817" ph="{...}" />
+                <marker date="1517883751000" expanded="true" signature="7884:7968" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Asteroid.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
+                <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
+                <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+                <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
+                <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -167,12 +185,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517603603003</updated>
-      <workItem from="1517603607338" duration="607000" />
+      <workItem from="1517603607338" duration="1130000" />
+      <workItem from="1517883653205" duration="129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="607000" />
+    <option name="totallyTimeSpent" value="1259000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -188,24 +207,24 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -220,53 +239,120 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="98" column="8" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+          <folding>
+            <marker date="1517883751000" expanded="false" signature="6:135" ph="..." />
+            <marker date="1517883751000" expanded="true" signature="178:7981" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="1563:1776" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="1626:1681" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="1836:2271" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2321:4091" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2503:2637" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2741:2794" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2901:2959" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2979:3119" ph="/* enable restart if game has gone to gameover ... */" />
+            <marker date="1517883751000" expanded="true" signature="3141:3575" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="3164:3273" ph="/* Debug.Log(&quot;Game over state is true&quot;); ... */" />
+            <marker date="1517883751000" expanded="true" signature="3350:3565" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="3585:3689" ph="/* Increment time since last asteroid by the time that has elapsed since ... */" />
+            <marker date="1517883751000" expanded="true" signature="4183:5023" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="4456:4673" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="4686:4888" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5089:5612" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5654:5718" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5742:5798" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5842:5911" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5936:6001" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6029:6159" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6196:6264" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6312:6581" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6406:6486" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6499:6575" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6618:6926" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6633:6827" ph="/* barScript.max = overheatScript.getMaxHeat(); ... */" />
+            <marker date="1517883751000" expanded="true" signature="6955:7330" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7219:7264" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7277:7323" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7427:7847" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7772:7817" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7884:7968" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
+            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
+            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
+            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
+            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
+            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
+            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="98" column="8" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+        <state relative-caret-position="386">
+          <caret line="102" column="93" lean-forward="false" selection-start-line="102" selection-start-column="93" selection-end-line="102" selection-end-column="93" />
           <folding>
-            <marker date="1517604140000" expanded="false" signature="6:135" ph="..." />
-            <marker date="1517604140000" expanded="true" signature="178:7820" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="1563:1776" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="1626:1681" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="1836:2271" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="2321:3930" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="2503:2637" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="2741:2807" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="2818:2958" ph="/* enable restart if game has gone to gameover ... */" />
-            <marker date="1517604140000" expanded="true" signature="2980:3414" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="3003:3112" ph="/* Debug.Log(&quot;Game over state is true&quot;); ... */" />
-            <marker date="1517604140000" expanded="true" signature="3189:3404" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="3424:3528" ph="/* Increment time since last asteroid by the time that has elapsed since ... */" />
-            <marker date="1517604140000" expanded="true" signature="4022:4862" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="4295:4512" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="4525:4727" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="4928:5451" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="5493:5557" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="5581:5637" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="5681:5750" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="5775:5840" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="5868:5998" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="6035:6103" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="6151:6420" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="6245:6325" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="6338:6414" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="6457:6765" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="6472:6666" ph="/* barScript.max = overheatScript.getMaxHeat(); ... */" />
-            <marker date="1517604140000" expanded="true" signature="6794:7169" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="7058:7103" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="7116:7162" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="7266:7686" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="7611:7656" ph="{...}" />
-            <marker date="1517604140000" expanded="true" signature="7723:7807" ph="{...}" />
+            <marker date="1517883751000" expanded="false" signature="6:135" ph="..." />
+            <marker date="1517883751000" expanded="true" signature="178:7981" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="1563:1776" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="1626:1681" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="1836:2271" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2321:4091" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2503:2637" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2741:2794" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2901:2959" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="2979:3119" ph="/* enable restart if game has gone to gameover ... */" />
+            <marker date="1517883751000" expanded="true" signature="3141:3575" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="3164:3273" ph="/* Debug.Log(&quot;Game over state is true&quot;); ... */" />
+            <marker date="1517883751000" expanded="true" signature="3350:3565" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="3585:3689" ph="/* Increment time since last asteroid by the time that has elapsed since ... */" />
+            <marker date="1517883751000" expanded="true" signature="4183:5023" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="4456:4673" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="4686:4888" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5089:5612" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5654:5718" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5742:5798" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5842:5911" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="5936:6001" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6029:6159" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6196:6264" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6312:6581" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6406:6486" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6499:6575" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6618:6926" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="6633:6827" ph="/* barScript.max = overheatScript.getMaxHeat(); ... */" />
+            <marker date="1517883751000" expanded="true" signature="6955:7330" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7219:7264" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7277:7323" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7427:7847" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7772:7817" ph="{...}" />
+            <marker date="1517883751000" expanded="true" signature="7884:7968" ph="{...}" />
           </folding>
         </state>
       </provider>

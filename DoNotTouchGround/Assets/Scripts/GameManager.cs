@@ -95,12 +95,17 @@ public class GameManager : MonoBehaviour {
             GameOver();
         }
         
-        // if player too close to edge, flash warning message
+        // If player too close to edge, flash warning message
         if (PlayerCloseToEdge())
         {
             updateWarningText();
-            
         }
+        // If player is not too close to edge/no longer close to edge, clear text from screen
+        else
+        {
+            warningText.text = "";   
+        }
+        
 
 
         //enable restart if game has gone to gameover

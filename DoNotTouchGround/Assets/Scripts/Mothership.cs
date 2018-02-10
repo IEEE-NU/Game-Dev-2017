@@ -2,22 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Missile : MonoBehaviour {
-	
+public class Mothership : MonoBehaviour {
+
 	bool Available = true;
 	bool m_targetingPoint = false;
 	float m_delay = 0.0f;
 	Vector3 m_currentTarget;
 	Vector2 m_speed;
 	float m_targetSpeed;
-	GameObject playerTarget;
 
 	const float ACCELERATION = 0.5f;
 	const float CHASE_TOLERANCE = 0.2f;
-	const float PURSUE_DISTANCE = 200f;
+	public float HoverDistance = 50f;
+
+	public float SpawnInterval = 5.0f;
+	public GameObject SpawnObject;
+	float sinceLastSpawn = 0.0f;
 
 	SpriteRenderer m_sprite;
-	TrailRenderer trail;
 
 	float timeOut = 0f;
 	float targetTime = 0.6f;
@@ -29,18 +31,19 @@ public class Missile : MonoBehaviour {
 		m_currentTarget = new Vector2 ();
 		m_speed = new Vector2 ();
 
-		trail = GetComponent<TrailRenderer> ();
-		if (FindObjectOfType<Player> ()) {
-			playerTarget = FindObjectOfType<Player> ().gameObject;
+		if (FindObjectOfType<Planet_Script> ()) {
+			m_currentTarget = FindObjectOfType<Planet_Script> ().gameObject.transform.position;
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if (playerTarget != null) {
-			m_currentTarget = playerTarget.transform.position;
-			if (Vector3.Distance (m_currentTarget, transform.position) < PURSUE_DISTANCE) {
+		if (m_currentTarget != null) {
+			float d = Vector3.Distance (m_currentTarget, transform.position);
+			if (d > HoverDistance) {
 				chaseTarget ();
+			} else {
+				spawnStuff ();
 			}
 		}
 	}
@@ -63,5 +66,21 @@ public class Missile : MonoBehaviour {
 
 	void orientToSpeed(Vector2 speed) {
 		m_sprite.transform.rotation = Quaternion.Euler (new Vector3(0f,0f,Mathf.Rad2Deg * Mathf.Atan2 (speed.y, speed.x)));
+	}
+
+	void spawnStuff() {
+		if (sinceLastSpawn > SpawnInterval) {
+			spawnItem ();
+		} else {
+			sinceLastSpawn += Time.deltaTime;
+		}
+	}
+
+	void spawnItem() {
+		// Otherwise, add an asteroid to the game.
+		GameObject temp = Instantiate(SpawnObject, transform.position, Quaternion.identity);
+		Transform tempLoc = temp.GetComponent<Transform>();
+		tempLoc.position = transform.position;
+		sinceLastSpawn = 0.0f;
 	}
 }

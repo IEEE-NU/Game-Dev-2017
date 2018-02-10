@@ -8,6 +8,7 @@ public class Laser : MonoBehaviour {
     [SerializeField] private Transform laserHit;
     [SerializeField] private int distance = 10000;
 	[SerializeField] private float laserDamageRate = 2.0f;
+	[SerializeField] private GameObject LaserPrefab;
 
     // Use this for initialization
     void Start () {
@@ -54,6 +55,7 @@ public class Laser : MonoBehaviour {
                     // Debug.Log("I'm Hitting something with my laser");
                     hit.rigidbody.AddForceAtPosition(transform.up * 50, hit.point);
 					hit.rigidbody.gameObject.GetComponent<Attackable> ().TakeDamage (Time.deltaTime * laserDamageRate);
+					Instantiate (LaserPrefab, hit.point, Quaternion.Euler(transform.eulerAngles));
                 }
             }
             else

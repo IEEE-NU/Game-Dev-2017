@@ -151,6 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxHealth: 10
   faction: player
+  rotSpeed: 180
   m_MaxSpeed: 1e+32
   MoveSpeed: 1600
   RotateSpeed: 400
@@ -185,6 +186,7 @@ MonoBehaviour:
   laserHit: {fileID: 0}
   distance: 200
   laserDamageRate: 10
+  LaserPrefab: {fileID: 0}
 --- !u!120 &120088603229237102
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -215,7 +217,7 @@ LineRenderer:
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0

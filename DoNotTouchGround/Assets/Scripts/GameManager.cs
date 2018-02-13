@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour {
 
     // Modulate type of asteroid of spawn
     [SerializeField] private GameObject m_AsteroidPrefab;
+    [SerializeField] private GameObject m_AsteroidPrefabMidSized;
 
     // get player object
     [SerializeField] private GameObject m_player;
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour {
 
     // How frequently an asteroid should spawn
     [SerializeField] private float m_AddAsteroidTime;
+    [SerializeField] private float m_AddAsteroidTimeMidSized;
 
     // Resets the game such that there is only one asteroid
     public void ResetGame()
@@ -187,8 +189,12 @@ public class GameManager : MonoBehaviour {
 
         // Otherwise, add an asteroid to the game.
         GameObject temp = Instantiate(m_AsteroidPrefab, SpawnLocation(), Quaternion.identity);
+        GameObject temp2 = Instantiate(m_AsteroidPrefabMidSized, SpawnLocation(), Quaternion.identity);
         Transform tempLoc = temp.GetComponent<Transform>();
         tempLoc.position = SpawnLocation(); // hack fix until reason behind is found why instantiate is not setting the given Vector3 object
+        Transform tempLoc2 = temp.GetComponent<Transform>();
+        tempLoc2.position = SpawnLocation();
+        Debug.Log(tempLoc2.position);
         m_CurrentAsteroids += 1;
     }
 

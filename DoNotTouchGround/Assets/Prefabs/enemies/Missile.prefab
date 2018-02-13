@@ -234,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxHealth: 1
   faction: enemy
+  explosion: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
 --- !u!212 &212034252847226564
 SpriteRenderer:
   m_ObjectHideFlags: 1

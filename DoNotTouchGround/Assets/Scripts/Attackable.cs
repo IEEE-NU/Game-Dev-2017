@@ -8,14 +8,19 @@ public class Attackable : MonoBehaviour {
 	[SerializeField] protected float m_MaxHealth;
 	protected float m_currHealth;
 	public string faction = "enemy";
+    [SerializeField] private GameObject explosion;
 
-	void Start () {
+    void Start () {
 		m_currHealth = m_MaxHealth;
 	}
 
 	public virtual void TakeDamage(float damage) {
 		m_currHealth -= damage;
-		if (m_currHealth <= 0)
-			Destroy(this.gameObject);
+	    if (m_currHealth <= 0)
+	    {
+	        GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+	        Destroy(expl, 3);
+        }
 	}
 }

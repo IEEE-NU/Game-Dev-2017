@@ -1322,7 +1322,8 @@ MonoBehaviour:
   warningText: {fileID: 1539657729}
   m_AsteroidPrefab: {fileID: 1243401395870960, guid: c39e397bd90bf1f40a97162a9e8e8ee4,
     type: 2}
-  m_AsteroidPrefabMidSized: {fileID: 0}
+  m_AsteroidPrefabMidSized: {fileID: 1243401395870960, guid: abdf438567e77be44a780b5f201340a4,
+    type: 2}
   m_player: {fileID: 1222429057}
   barScript: {fileID: 493150214}
   overheatScript: {fileID: 1222429058}

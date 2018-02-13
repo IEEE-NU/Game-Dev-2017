@@ -1168,11 +1168,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4430390996447268, guid: d5b85ea3f6662744fb70b8fffdab11a7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -152.7
+      value: 75.3
       objectReference: {fileID: 0}
     - target: {fileID: 4430390996447268, guid: d5b85ea3f6662744fb70b8fffdab11a7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -85.5
+      value: -56.5
       objectReference: {fileID: 0}
     - target: {fileID: 4430390996447268, guid: d5b85ea3f6662744fb70b8fffdab11a7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1322,10 +1322,12 @@ MonoBehaviour:
   warningText: {fileID: 1539657729}
   m_AsteroidPrefab: {fileID: 1243401395870960, guid: c39e397bd90bf1f40a97162a9e8e8ee4,
     type: 2}
+  m_AsteroidPrefabMidSized: {fileID: 0}
   m_player: {fileID: 1222429057}
   barScript: {fileID: 493150214}
   overheatScript: {fileID: 1222429058}
   m_AddAsteroidTime: 3
+  m_AddAsteroidTimeMidSized: 0
 --- !u!4 &1272671006
 Transform:
   m_ObjectHideFlags: 0
@@ -5527,8 +5529,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 16341181
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a2b5fb0b4b08f3e4eb9fe6e0f8539fd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

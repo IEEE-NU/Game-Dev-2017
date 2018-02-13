@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212914427068455910}
   - component: {fileID: 50787665745598278}
   - component: {fileID: 60039937881895644}
-  - component: {fileID: 114722494192150712}
   - component: {fileID: 114270342217162892}
+  - component: {fileID: 114324017917638418}
   - component: {fileID: 114296681310503892}
   - component: {fileID: 96785512796794946}
   m_Layer: 0
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_damage: 200
   faction: none
---- !u!114 &114722494192150712
+--- !u!114 &114324017917638418
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -208,10 +208,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1243401395870960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc6d22a8b46b5c948844416721c0df9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 004ffb2877ba1f148aaa9ab856891dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 1500
+  m_MaxSpeed: 0
 --- !u!212 &212914427068455910
 SpriteRenderer:
   m_ObjectHideFlags: 1

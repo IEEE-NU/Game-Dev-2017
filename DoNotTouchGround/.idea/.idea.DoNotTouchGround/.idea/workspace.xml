@@ -48,10 +48,10 @@
       <file leaf-file-name="Attackable.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Attackable.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="73" lean-forward="false" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1518564605000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1518564605000" expanded="true" signature="6:78" ph="..." />
                 <marker date="1518564605000" expanded="true" signature="120:756" ph="{...}" />
                 <marker date="1518564605000" expanded="true" signature="337:371" ph="{...}" />
                 <marker date="1518564605000" expanded="true" signature="419:754" ph="{...}" />
@@ -201,12 +201,12 @@
       <workItem from="1517603607338" duration="1130000" />
       <workItem from="1517883653205" duration="316000" />
       <workItem from="1517946122680" duration="643000" />
-      <workItem from="1518563848573" duration="674000" />
+      <workItem from="1518563848573" duration="1038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2770000" />
+    <option name="totallyTimeSpent" value="3134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,6 +342,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
@@ -363,6 +364,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
@@ -391,6 +393,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
@@ -412,6 +415,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
@@ -426,6 +430,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
@@ -468,6 +473,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
@@ -489,6 +495,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
@@ -551,6 +558,7 @@
           <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
           <folding>
             <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
             <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
@@ -574,10 +582,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Attackable.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="73" lean-forward="false" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518564605000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1518564605000" expanded="true" signature="6:78" ph="..." />
             <marker date="1518564605000" expanded="true" signature="120:756" ph="{...}" />
             <marker date="1518564605000" expanded="true" signature="337:371" ph="{...}" />
             <marker date="1518564605000" expanded="true" signature="419:754" ph="{...}" />

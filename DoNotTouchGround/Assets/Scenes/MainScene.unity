@@ -1221,11 +1221,11 @@ MonoBehaviour:
   gameOverText: {fileID: 1532525839}
   overheatText: {fileID: 1613385962}
   warningText: {fileID: 1539657729}
-  m_AsteroidPrefab: {fileID: 1243401395870960, guid: c39e397bd90bf1f40a97162a9e8e8ee4,
+  m_AsteroidPrefab: {fileID: 1284734751793420, guid: 26ef6e13aa60550419b77c5af84e9da8,
     type: 2}
-  m_AsteroidPrefabMidSized: {fileID: 1243401395870960, guid: abdf438567e77be44a780b5f201340a4,
+  m_AsteroidPrefabMidSized: {fileID: 1953304800652256, guid: fd270eb363c6ba7499c31213bebeb81d,
     type: 2}
-  m_AsteroidPrefabBigSized: {fileID: 1243401395870960, guid: 8ee2b2c7ccb0844eeb8ba7cde807241c,
+  m_AsteroidPrefabBigSized: {fileID: 1395978222736468, guid: 86da436c7688d5c4f80a7e0ee89c66ac,
     type: 2}
   m_player: {fileID: 1222429057}
   barScript: {fileID: 493150214}

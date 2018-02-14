@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114296681310503892}
   - component: {fileID: 96785512796794946}
   m_Layer: 0
-  m_Name: midsizedAsteroid
+  m_Name: bigsizedAsteroid
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxHealth: 5
   faction: enemy
+  explosion: {fileID: 0}
 --- !u!114 &114296681310503892
 MonoBehaviour:
   m_ObjectHideFlags: 1

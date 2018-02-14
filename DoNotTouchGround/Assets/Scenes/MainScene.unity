@@ -1225,11 +1225,14 @@ MonoBehaviour:
     type: 2}
   m_AsteroidPrefabMidSized: {fileID: 1243401395870960, guid: abdf438567e77be44a780b5f201340a4,
     type: 2}
+  m_AsteroidPrefabBigSized: {fileID: 1243401395870960, guid: 8ee2b2c7ccb0844eeb8ba7cde807241c,
+    type: 2}
   m_player: {fileID: 1222429057}
   barScript: {fileID: 493150214}
   overheatScript: {fileID: 1222429058}
   m_AddAsteroidTime: 3
   m_AddAsteroidTimeMidSized: 0
+  m_AddAsteroidTimeBigSized: 0
 --- !u!4 &1272671006
 Transform:
   m_ObjectHideFlags: 0
@@ -5318,6 +5321,14 @@ Prefab:
       propertyPath: targets.Array.data[1]
       value: 
       objectReference: {fileID: 324263897}
+    - target: {fileID: 4325202533032072, guid: 201e93549a1890a41a7947da896009ae, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325202533032072, guid: 201e93549a1890a41a7947da896009ae, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 201e93549a1890a41a7947da896009ae, type: 2}
   m_IsPrefabParent: 0
@@ -5412,6 +5423,17 @@ Prefab:
     - target: {fileID: 4421332202660660, guid: 6af60bde3fd321a4086ee32f4f896d7b, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 212435516416149072, guid: 6af60bde3fd321a4086ee32f4f896d7b,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c4924dd91e8342642823508d842d211e,
+        type: 3}
+    - target: {fileID: 212435516416149072, guid: 6af60bde3fd321a4086ee32f4f896d7b,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6af60bde3fd321a4086ee32f4f896d7b, type: 2}

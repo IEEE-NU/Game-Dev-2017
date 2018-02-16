@@ -7,8 +7,20 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		Debug.Log ("Trying to play game");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+	public void goToStory()
+	{
+		Debug.Log ("Trying to load story");
+		SceneManager.LoadScene("StoryMenu");
+	}
+
+	public void goToMenu()
+	{
+		SceneManager.LoadScene("StartMenu");
+	}
 
     public void QuitGame()
     {

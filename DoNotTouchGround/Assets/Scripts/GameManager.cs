@@ -34,6 +34,14 @@ public class GameManager : MonoBehaviour {
 	[SerializeField] private GameObject m_AsteroidPrefabBigSized;
 
 
+	List<GameObject> enemies=new List<GameObject>();
+	List<int> numEnemy=new List<int>();
+	/*enemies.add (m_AsteroidPrefab);
+	enemies.add (m_AsteroidPrefabMidSized);
+	enemies.add (m_AsteroidPrefabBigSized);
+	numEnemy.Add(12);
+	numEnemy.Add(6);
+	numEnemy.Add(3);*/
     // get player object
     [SerializeField] private GameObject m_player;
 
@@ -111,7 +119,6 @@ public class GameManager : MonoBehaviour {
             warningText.text = "";   
         }
         
-
 
         //enable restart if game has gone to gameover
         //some issues with using GetKeyDown. Maybe cause its not checking on the right frames?
@@ -202,7 +209,24 @@ public class GameManager : MonoBehaviour {
 		tempLoc3.position = SpawnLocation ();
         m_CurrentAsteroids += 1;
     }
-
+	/*
+	private void Spawn(List<GameObject> enemies, List<int> numEnemy)
+	{
+		int sizeEnemies = 0;
+		foreach (GameObject e in enemies)
+			sizeEnemies++;
+		for(int i=0;i<sizeEnemies;i++)
+		{
+			Vector3 spawnPos = SpawnLocation ();
+			Instantiate (enemies [i], spawnPos, Quaternion.identity);
+		}
+		//figure out how to grab values from the prefabs and move the time values to the prefabs.
+		//int timeBetweenEnemies = enemies [1].timeForSpawn;
+		//put time here for the function to wait for the new enemy.
+		//figure out how waitforseconds is going to work cause it doesnt like the yield before it 
+		yield return WaitForSeconds(timeBetweenEnemies);
+	}
+*/
     public void AddScore(int scoreAdded)
     {
         score += scoreAdded;

@@ -17,7 +17,12 @@ public class MainMenu : MonoBehaviour {
 		SceneManager.LoadScene("StoryMenu");
 	}
 
-	public void goToMenu()
+    public void goToSettings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+
+    public void goToMenu()
 	{
 		SceneManager.LoadScene("StartMenu");
 	}

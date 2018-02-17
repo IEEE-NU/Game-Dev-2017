@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour {
     public Text gameOverText;
     public Text overheatText;
     public Text warningText;
+
+    public TextMeshProUGUI highScore;
 
     //keeps track if game is over
     private bool gameover = false;
@@ -92,10 +95,17 @@ public class GameManager : MonoBehaviour {
         scoreText.text = "Score: " + score;
         healthText.text = "Health: " + healthPoints;
         warningText.text = "";
+
+        //Testing Line that resets HighScore
+        //PlayerPrefs.DeleteKey("HighScore");
+        highScore.text = "High Score: " + PlayerPrefs.GetInt("HighScore", 0);
     }
 
     // Called once per frame
     void Update () {
+
+        //Updates the highscore.
+        UpdateHighScore();
 
         //updates the overheat bar
         updateOverheatBar();
@@ -149,7 +159,6 @@ public class GameManager : MonoBehaviour {
         // Otherwise, add an asteroid and reset the timer!
         m_TimeSinceLastAsteroid = 0;
         AddEnemy();
-
 
 
 
@@ -236,6 +245,15 @@ public class GameManager : MonoBehaviour {
     void UpdateScore()
     {
         scoreText.text = "Score: " + score;
+    }
+
+    void UpdateHighScore()
+    {
+        if (score > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+            highScore.SetText("High Score: " + score);
+        }
     }
 
     public void SetHealth(float newHealth)

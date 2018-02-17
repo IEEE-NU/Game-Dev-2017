@@ -9,6 +9,8 @@ TagManager:
   - Projectile
   - Asteroid
   - GameManager
+  - Missile
+  - Mothership
   layers:
   - Default
   - TransparentFX

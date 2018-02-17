@@ -8,16 +8,28 @@ public class Attackable : MonoBehaviour {
 	[SerializeField] protected float m_MaxHealth;
 	protected float m_currHealth;
 	public string faction = "enemy";
+    private GameManager gameManager;
     [SerializeField] private GameObject explosion;
 
     void Start () {
 		m_currHealth = m_MaxHealth;
-	}
+        GameObject gameControllerObject = GameObject.FindWithTag("GameManager");
+        if (gameControllerObject != null)
+        {
+            gameManager = gameControllerObject.GetComponent<GameManager>();
+        }
+    }
 
-	public virtual void TakeDamage(float damage) {
+    public virtual void TakeDamage(float damage) {
 		m_currHealth -= damage;
 	    if (m_currHealth <= 0)
 	    {
+	        if (gameObject.tag == "Asteroid")
+	            gameManager.AddScore(20);
+	        else
+	        {
+	            gameManager.AddScore(100);
+            }
 	        GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
 	        Destroy(expl, 3);

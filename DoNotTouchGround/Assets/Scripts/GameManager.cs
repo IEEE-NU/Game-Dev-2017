@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -243,6 +244,16 @@ public class GameManager : MonoBehaviour {
       {
         Vector3 spawnPos = SpawnLocation ();
         Instantiate(enemy, spawnPos, Quaternion.identity);
+        /*
+        // access spawn time from given prefab
+        if (enemy.GetComponent<Asteroid>().spawnTime != null)
+        {
+          // calculate milliseconds assuming input is in WaitForSeconds
+          int waitTime = enemy.GetComponent<Asteroid>().spawnTime;
+          waitTime = waitTime * 1000;
+          Thread.Sleep(waitTime);
+        }
+        */
       }
     }
 

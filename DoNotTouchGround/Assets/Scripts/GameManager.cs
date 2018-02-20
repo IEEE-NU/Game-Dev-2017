@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour {
             m_player.SetActive(false);
             GameOver();
         }
-        
+
         // If player too close to edge, flash warning message
         if (PlayerCloseToEdge())
         {
@@ -126,16 +126,16 @@ public class GameManager : MonoBehaviour {
         // If player is not too close to edge/no longer close to edge, clear text from screen
         else
         {
-            warningText.text = "";   
+            warningText.text = "";
         }
-        
+
 
         //enable restart if game has gone to gameover
         //some issues with using GetKeyDown. Maybe cause its not checking on the right frames?
         if (gameover)
         {
             //Debug.Log("Game over state is true");
-            
+
             // Reset warning text so it's not in the way
             warningText.text = "";
 
@@ -180,7 +180,7 @@ public class GameManager : MonoBehaviour {
                 y = -height;
             z = 0f;
 
-            
+
         }
         else
         {
@@ -232,10 +232,30 @@ public class GameManager : MonoBehaviour {
 		//figure out how to grab values from the prefabs and move the time values to the prefabs.
 		//int timeBetweenEnemies = enemies [1].timeForSpawn;
 		//put time here for the function to wait for the new enemy.
-		//figure out how waitforseconds is going to work cause it doesnt like the yield before it 
+		//figure out how waitforseconds is going to work cause it doesnt like the yield before it
 		yield return WaitForSeconds(timeBetweenEnemies);
 	}
 */
+
+    private void SpawnSingle(GameObject enemy, int amount)
+    {
+      for (int i = 0; i < amount; i++)
+      {
+        Vector3 spawnPos = SpawnLocation ();
+        Instantiate(enemy, spawnPos, Quaternion.identity);
+      }
+    }
+
+    private void SpawnMultiple(List<GameObject> enemies, List<int> numEnemy)
+    {
+      int currIndex = 0;
+      foreach (GameObject e in enemies)
+      {
+        SpawnSingle(e, numEnemy[currIndex]);
+        currIndex++;
+      }
+    }
+
     public void AddScore(int scoreAdded)
     {
         score += scoreAdded;
@@ -338,8 +358,7 @@ public class GameManager : MonoBehaviour {
     {
         warningText.text = "WARNING: You are leaving the battlefield!";
     }
-    
-    
+
+
 
 }
-

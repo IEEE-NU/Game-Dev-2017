@@ -9,7 +9,7 @@ public class Attackable : MonoBehaviour {
 	protected float m_currHealth;
 	public string faction = "enemy";
     private GameManager gameManager;
-    [SerializeField] private GameObject explosion;
+    [SerializeField] public GameObject explosion;
 
     void Start () {
 		m_currHealth = m_MaxHealth;

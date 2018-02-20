@@ -18,7 +18,7 @@ public class Planet_Script : Attackable {
         {
             Debug.Log("cant fine 'GameManager' object");
         }
-        GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f);
+        //GetComponent<SpriteRenderer>().color = new Color(0f, 1f, 0f);
 		m_currHealth = m_MaxHealth;
     }
 	
@@ -34,8 +34,13 @@ public class Planet_Script : Attackable {
 
 			if (m_currHealth <= 0)
                 {
+                    //added code to make the explosion happen on planet death
+                    GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
+                    Destroy(this.gameObject);
+                    Destroy(expl, 3);
                     gameManager.GameOver();
                     gameObject.SetActive(false);
+                    
                 }
         }    
 }

@@ -15,5 +15,8 @@ public class Projectile : MonoBehaviour {
 			col.gameObject.GetComponent<Attackable> ().TakeDamage (m_damage);
 			Destroy (gameObject);
 		}
+		if (faction == "player" && col.gameObject.GetComponent<Planet_Script> ()) {
+			Destroy (gameObject);
+		}
 	}
 }

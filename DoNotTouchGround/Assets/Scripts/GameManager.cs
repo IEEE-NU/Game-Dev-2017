@@ -270,7 +270,7 @@ public class GameManager : MonoBehaviour {
         m_CurrentAsteroids += 1;
     }*/
 
-	private IEnumerator SpawnObj (IList<GameObject> enemies, IList<int> numEnemy, int waveNo)
+	private void SpawnObj (IList<GameObject> enemies, IList<int> numEnemy, int waveNo)
 	{
 		Debug.Log ("Why are you not calling me?");
 		int sizeEnemies = 0;
@@ -292,7 +292,7 @@ public class GameManager : MonoBehaviour {
 				Vector3 spawnPos = SpawnLocation ();
 				Instantiate (enemies [i], spawnPos, Quaternion.identity);
 			}
-		yield return new WaitForSeconds(1);
+		//yield return new WaitForSeconds(1);
 		}
 		//put time here for the function to wait for the new enemy.
 		//figure out how waitforseconds is going to work cause it doesnt like the yield before it

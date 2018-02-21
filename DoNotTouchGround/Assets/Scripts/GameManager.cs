@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class GameManager : MonoBehaviour {
     // Singleton Design Pattern
@@ -36,16 +36,9 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private GameObject m_AsteroidPrefab;
     [SerializeField] private GameObject m_AsteroidPrefabMidSized;
 	[SerializeField] private GameObject m_AsteroidPrefabBigSized;
-
-
-	List<GameObject> enemies=new List<GameObject>();
-	List<int> numEnemy=new List<int>();
-	/*enemies.add (m_AsteroidPrefab);
-	enemies.add (m_AsteroidPrefabMidSized);
-	enemies.add (m_AsteroidPrefabBigSized);
-	numEnemy.Add(12);
-	numEnemy.Add(6);
-	numEnemy.Add(3);*/
+	[SerializeField] private GameObject m_MotherShipPrefab;
+	IList <GameObject> enemies = new List <GameObject>();
+	IList <int> numEnemy= new List <int>();
     // get player object
     [SerializeField] private GameObject m_player;
 
@@ -68,7 +61,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private float m_AddAsteroidTime;
     [SerializeField] private float m_AddAsteroidTimeMidSized;
 	[SerializeField] private float m_AddAsteroidTimeBigSized;
-
+	[SerializeField] private float spawnTime;
     // Resets the game such that there is only one asteroid
     public void ResetGame()
     {
@@ -78,7 +71,8 @@ public class GameManager : MonoBehaviour {
         }
         m_CurrentAsteroids = 0;
         m_TimeSinceLastAsteroid = 0;
-        AddEnemy();
+        //AddEnemy();
+		Wave();
     }
 
     // Called upon initialization
@@ -100,10 +94,19 @@ public class GameManager : MonoBehaviour {
         //Testing Line that resets HighScore
         //PlayerPrefs.DeleteKey("HighScore");
         highScore.text = "High Score: " + PlayerPrefs.GetInt("HighScore", 0);
+
+		enemies.Add(m_AsteroidPrefab);
+		enemies.Add(m_AsteroidPrefabMidSized);
+		enemies.Add(m_AsteroidPrefabBigSized);
+		numEnemy.Add(12);
+		numEnemy.Add(6);
+		numEnemy.Add(3);
+		enemies.Add (m_MotherShipPrefab);
+		numEnemy.Add (1);
     }
 
     // Called once per frame
-    void Update () {
+   /* void Update () {
 
         //Updates the highscore.
         UpdateHighScore();
@@ -152,7 +155,7 @@ public class GameManager : MonoBehaviour {
 		 * Increment time since last asteroid by the time that has elapsed since
 		 * the last frame.
 		 */
-        m_TimeSinceLastAsteroid += Time.deltaTime;
+      /*  m_TimeSinceLastAsteroid += Time.deltaTime;
 
         // If the time since the last asteroid is less than the spawn interval, do nothing.
         if (m_TimeSinceLastAsteroid <= m_AddAsteroidTime) return; //BE CAREFUL OF THIS RETURN!!! IT WAS SCREWING UP MY OTHER CALLS
@@ -164,13 +167,60 @@ public class GameManager : MonoBehaviour {
 
 
     }
+	*/
+	void Update () {
 
+		//Updates the highscore.
+		UpdateHighScore();
+
+		//updates the overheat bar
+		updateOverheatBar();
+
+		//check if player is off the screen. If so, deactivate it and call gameover
+		if (PlayerOffScreen())
+		{
+			Debug.Log("The Player is off screen");
+			m_player.SetActive(false);
+			GameOver();
+		}
+
+		// If player too close to edge, flash warning message
+		if (PlayerCloseToEdge())
+		{
+			updateWarningText();
+		}
+		// If player is not too close to edge/no longer close to edge, clear text from screen
+		else
+		{
+			warningText.text = "";
+		}
+
+
+		//enable restart if game has gone to gameover
+		//some issues with using GetKeyDown. Maybe cause its not checking on the right frames?
+		if (gameover)
+		{
+			//Debug.Log("Game over state is true");
+
+			// Reset warning text so it's not in the way
+			warningText.text = "";
+
+			if (Input.GetKey(KeyCode.P))
+			{
+				Debug.Log("Game over state is true and p is pressed");
+				gameover = false;
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			}
+		}
+
+		Wave ();
+	}
     // Return random vector3 values to spawn asteroids
     private Vector3 SpawnLocation()
     {
         float x, y, z;
-        float height = 175f; //m_MainCamera.orthographicSize;
-        float width = 275f; //height * m_MainCamera.aspect;
+        float height = 82.5f; //m_MainCamera.orthographicSize;
+        float width = 132.5f; //height * m_MainCamera.aspect;
         // Choose to spawn either in x or y bounds
         if (Random.Range(0f, 1f) > 0.5f) // > 0.5 spawn X else spawn Y
         {
@@ -202,7 +252,7 @@ public class GameManager : MonoBehaviour {
 
 
     // Adds an asteroid to the game
-    private void AddEnemy()
+   /* private void AddEnemy()
     {
         // If we already have the maximum number of enemies, do nothing.
         if (m_CurrentAsteroids >= MAX_ASTEROIDS) return;
@@ -218,42 +268,56 @@ public class GameManager : MonoBehaviour {
 		Transform tempLoc3 = temp3.GetComponent<Transform> ();
 		tempLoc3.position = SpawnLocation ();
         m_CurrentAsteroids += 1;
-    }
-	/*
-	private void Spawn(List<GameObject> enemies, List<int> numEnemy)
+    }*/
+
+	private IEnumerator SpawnObj (IList<GameObject> enemies, IList<int> numEnemy, int waveNo)
 	{
+		Debug.Log ("Why are you not calling me?");
 		int sizeEnemies = 0;
-		foreach (GameObject e in enemies)
-			sizeEnemies++;
+		foreach (GameObject e in enemies) sizeEnemies++;
+		int numToSpawn = 0;
+		Debug.Log ("Size enemies: " + sizeEnemies);
 		for(int i=0;i<sizeEnemies;i++)
 		{
-			Vector3 spawnPos = SpawnLocation ();
-			Instantiate (enemies [i], spawnPos, Quaternion.identity);
+			if (numEnemy [i] == 12)
+				numToSpawn = 12 * waveNo - 3;
+			else if (numEnemy [i] == 6)
+				numToSpawn = 6 * waveNo - 3;
+			else if (numEnemy [i] == 3)
+				numToSpawn = 3 * waveNo - 2;
+			else if (numEnemy [i] == 1)
+				numToSpawn = 1 * waveNo - 3;
+			for (int j = 0; j <= numToSpawn; j++) 
+			{
+				Vector3 spawnPos = SpawnLocation ();
+				Instantiate (enemies [i], spawnPos, Quaternion.identity);
+			}
+		yield return new WaitForSeconds(1);
 		}
-		//figure out how to grab values from the prefabs and move the time values to the prefabs.
-		//int timeBetweenEnemies = enemies [1].timeForSpawn;
 		//put time here for the function to wait for the new enemy.
 		//figure out how waitforseconds is going to work cause it doesnt like the yield before it
-		yield return WaitForSeconds(timeBetweenEnemies);
+	} 
+	private void Wave()
+	{
+		Debug.Log ("Wave is being called");
+		int waveNo = 1;
+		GameObject[] gos=GameObject.FindGameObjectsWithTag("Asteroid");
+		Debug.Log ("Num objs with Tag: " + gos.Length); 
+		if (gos.Length == 0) {
+			waveNo++;
+			Debug.Log ("Calling spawn");
+			SpawnObj (enemies, numEnemy, waveNo);
+		}
 	}
-*/
+	//findAllObjectsOfType
 
-    private void SpawnSingle(GameObject enemy, int amount)
+
+    /*private void SpawnSingle(GameObject enemy, int amount)
     {
       for (int i = 0; i < amount; i++)
       {
         Vector3 spawnPos = SpawnLocation ();
         Instantiate(enemy, spawnPos, Quaternion.identity);
-        /*
-        // access spawn time from given prefab
-        if (enemy.GetComponent<Asteroid>().spawnTime != null)
-        {
-          // calculate milliseconds assuming input is in WaitForSeconds
-          int waitTime = enemy.GetComponent<Asteroid>().spawnTime;
-          waitTime = waitTime * 1000;
-          Thread.Sleep(waitTime);
-        }
-        */
       }
     }
 
@@ -266,7 +330,7 @@ public class GameManager : MonoBehaviour {
         currIndex++;
       }
     }
-
+*/
     public void AddScore(int scoreAdded)
     {
         score += scoreAdded;

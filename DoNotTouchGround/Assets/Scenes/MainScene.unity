@@ -1053,12 +1053,15 @@ MonoBehaviour:
     type: 2}
   m_AsteroidPrefabBigSized: {fileID: 1395978222736468, guid: 86da436c7688d5c4f80a7e0ee89c66ac,
     type: 2}
+  m_MotherShipPrefab: {fileID: 1046127860975412, guid: d5b85ea3f6662744fb70b8fffdab11a7,
+    type: 2}
   m_player: {fileID: 1222429057}
   barScript: {fileID: 493150214}
   overheatScript: {fileID: 1222429058}
   m_AddAsteroidTime: 3
   m_AddAsteroidTimeMidSized: 0
   m_AddAsteroidTimeBigSized: 0
+  spawnTime: 1000
 --- !u!4 &1272671006
 Transform:
   m_ObjectHideFlags: 0

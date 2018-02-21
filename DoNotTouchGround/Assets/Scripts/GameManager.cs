@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -117,7 +118,7 @@ public class GameManager : MonoBehaviour {
             m_player.SetActive(false);
             GameOver();
         }
-        
+
         // If player too close to edge, flash warning message
         if (PlayerCloseToEdge())
         {
@@ -126,16 +127,16 @@ public class GameManager : MonoBehaviour {
         // If player is not too close to edge/no longer close to edge, clear text from screen
         else
         {
-            warningText.text = "";   
+            warningText.text = "";
         }
-        
+
 
         //enable restart if game has gone to gameover
         //some issues with using GetKeyDown. Maybe cause its not checking on the right frames?
         if (gameover)
         {
             //Debug.Log("Game over state is true");
-            
+
             // Reset warning text so it's not in the way
             warningText.text = "";
 
@@ -180,7 +181,7 @@ public class GameManager : MonoBehaviour {
                 y = -height;
             z = 0f;
 
-            
+
         }
         else
         {
@@ -211,11 +212,11 @@ public class GameManager : MonoBehaviour {
 		GameObject temp2 = Instantiate(m_AsteroidPrefabMidSized, SpawnLocation(), Quaternion.Euler(0f,0f,Random.Range(0f,360)));//midsized
 		GameObject temp3 =Instantiate(m_AsteroidPrefabBigSized, SpawnLocation(),Quaternion.Euler(0f,0f,Random.Range(0f,360)));//bigsized
         Transform tempLoc = temp.GetComponent<Transform>();
-        tempLoc.position = SpawnLocation(); // hack fix until reason behind is found why instantiate is not setting the given Vector3 object
+        //tempLoc.position = SpawnLocation(); // hack fix until reason behind is found why instantiate is not setting the given Vector3 object
         Transform tempLoc2 = temp2.GetComponent<Transform>();//hack fix for the midsized
-        tempLoc2.position = SpawnLocation();
+        //tempLoc2.position = SpawnLocation();
 		Transform tempLoc3 = temp3.GetComponent<Transform> ();
-		tempLoc3.position = SpawnLocation ();
+		//tempLoc3.position = SpawnLocation ();
         m_CurrentAsteroids += 1;
     }
 	/*
@@ -232,10 +233,40 @@ public class GameManager : MonoBehaviour {
 		//figure out how to grab values from the prefabs and move the time values to the prefabs.
 		//int timeBetweenEnemies = enemies [1].timeForSpawn;
 		//put time here for the function to wait for the new enemy.
-		//figure out how waitforseconds is going to work cause it doesnt like the yield before it 
+		//figure out how waitforseconds is going to work cause it doesnt like the yield before it
 		yield return WaitForSeconds(timeBetweenEnemies);
 	}
 */
+
+    private void SpawnSingle(GameObject enemy, int amount)
+    {
+      for (int i = 0; i < amount; i++)
+      {
+        Vector3 spawnPos = SpawnLocation ();
+        Instantiate(enemy, spawnPos, Quaternion.identity);
+        /*
+        // access spawn time from given prefab
+        if (enemy.GetComponent<Asteroid>().spawnTime != null)
+        {
+          // calculate milliseconds assuming input is in WaitForSeconds
+          int waitTime = enemy.GetComponent<Asteroid>().spawnTime;
+          waitTime = waitTime * 1000;
+          Thread.Sleep(waitTime);
+        }
+        */
+      }
+    }
+
+    private void SpawnMultiple(List<GameObject> enemies, List<int> numEnemy)
+    {
+      int currIndex = 0;
+      foreach (GameObject e in enemies)
+      {
+        SpawnSingle(e, numEnemy[currIndex]);
+        currIndex++;
+      }
+    }
+
     public void AddScore(int scoreAdded)
     {
         score += scoreAdded;
@@ -338,8 +369,7 @@ public class GameManager : MonoBehaviour {
     {
         warningText.text = "WARNING: You are leaving the battlefield!";
     }
-    
-    
+
+
 
 }
-

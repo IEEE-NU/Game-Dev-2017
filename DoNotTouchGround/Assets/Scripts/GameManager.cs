@@ -262,11 +262,11 @@ public class GameManager : MonoBehaviour {
         GameObject temp2 = Instantiate(m_AsteroidPrefabMidSized, SpawnLocation(), Quaternion.identity);//midsized
 		GameObject temp3 =Instantiate(m_AsteroidPrefabBigSized, SpawnLocation(),Quaternion.identity);//bigsized
         Transform tempLoc = temp.GetComponent<Transform>();
-        tempLoc.position = SpawnLocation(); // hack fix until reason behind is found why instantiate is not setting the given Vector3 object
+        //tempLoc.position = SpawnLocation(); // hack fix until reason behind is found why instantiate is not setting the given Vector3 object
         Transform tempLoc2 = temp2.GetComponent<Transform>();//hack fix for the midsized
-        tempLoc2.position = SpawnLocation();
+        //tempLoc2.position = SpawnLocation();
 		Transform tempLoc3 = temp3.GetComponent<Transform> ();
-		tempLoc3.position = SpawnLocation ();
+		//tempLoc3.position = SpawnLocation ();
         m_CurrentAsteroids += 1;
     }*/
 

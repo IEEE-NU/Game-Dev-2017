@@ -40,6 +40,7 @@ public class Player : Attackable {
     [SerializeField] private Transform laserHit;
 
     [SerializeField] public Overheat overheatScript;
+    [SerializeField] public BarScript barScript;
     [SerializeField] public GameManager gameManager;
 
     public bool paused = false;
@@ -140,12 +141,12 @@ public class Player : Attackable {
             overheatScript.AddHeat(1f);
         }
 
-        gameManager.updateOverheatText(overheatScript.getHeat());
 
         if (overheatScript.isOverheated())
         {
-            StartCoroutine("Delay");
-            overheatScript.resetHeat();
+            Debug.Log("isOverheated is true");
+            StartCoroutine(barScript.OverheatBar());
+            StartCoroutine("overHeatWait");
         }
 
         // Actually move the player
@@ -205,11 +206,12 @@ public class Player : Attackable {
 
     }
 
-    IEnumerator Delay()
+    IEnumerator overHeatWait()
     {
         paused = true;
         yield return new WaitForSeconds(3);
         paused = false;
+        overheatScript.resetHeat();
     }
 
 	public override void TakeDamage(float damage)

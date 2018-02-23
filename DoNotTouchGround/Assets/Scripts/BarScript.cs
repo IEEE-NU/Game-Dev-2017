@@ -12,14 +12,20 @@ public class BarScript : MonoBehaviour
     {
         fillAmount = Mathf.Lerp(min, max, currPercentage);
         content.fillAmount = fillAmount;
-
-        /*Debug.Log(min);
-        Debug.Log(max);
-        Debug.Log(currPercentage);
-        Debug.Log(fillAmount);
-        Debug.Log("This is barScript");*/
-
     }
 
-   
+    public IEnumerator OverheatBar()
+    {
+        content.fillAmount = 1;
+        for (var n = 0; n < 15; n++)
+        {
+            content.color = Color.white;
+            yield return new WaitForSeconds(.1f);
+            content.color = Color.red;
+            yield return new WaitForSeconds(.1f);
+        }
+        content.color = Color.white;
+    }
+
+
 }

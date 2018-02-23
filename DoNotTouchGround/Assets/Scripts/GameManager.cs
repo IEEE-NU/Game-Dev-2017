@@ -20,13 +20,11 @@ public class GameManager : MonoBehaviour {
     public int healthPoints = 100;
 
     //text components for the HUD
-    public Text scoreText;
-    public Text healthText;
-    public Text restartText;
-    public Text gameOverText;
-    public Text overheatText;
-    public Text warningText;
-
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI healthText;
+    public TextMeshProUGUI restartText;
+    public TextMeshProUGUI gameOverText;
+    public TextMeshProUGUI warningText;
     public TextMeshProUGUI highScore;
 
     //keeps track if game is over
@@ -299,13 +297,13 @@ public class GameManager : MonoBehaviour {
 	} 
 	private void Wave()
 	{
-		Debug.Log ("Wave is being called");
+		//Debug.Log ("Wave is being called");
 		int waveNo = 1;
 		GameObject[] gos=GameObject.FindGameObjectsWithTag("Asteroid");
-		Debug.Log ("Num objs with Tag: " + gos.Length); 
+		//Debug.Log ("Num objs with Tag: " + gos.Length); 
 		if (gos.Length == 0) {
 			waveNo++;
-			Debug.Log ("Calling spawn");
+			//Debug.Log ("Calling spawn");
 			SpawnObj (enemies, numEnemy, waveNo);
 		}
 	}
@@ -364,36 +362,35 @@ public class GameManager : MonoBehaviour {
 
     public void GameOver()
     {
-        gameOverText.text = "Game Over. Thanks for playing!!!";
+        gameOverText.text = "Game Over"; //this is a bad way to do things. Enable and disable them in the future instead of assigning new values
         updateRestartText();
         gameover = true;
     }
 
     public void updateRestartText()
     {
-        restartText.text = "Please hold p to restart!";
+        restartText.text = "Press 'P' to restart!";
     }
 
-    public void updateOverheatText(float heat)
-    {
-        overheatText.text = "Overheat: " + Mathf.Round(heat);
-        if (heat == 100f)
-        {
-            overheatText.color = new Color(1f, 0.0f, 0.0f);
-        }
-        else
-        {
-            overheatText.color = new Color(1f, 1f, 1f);
-        }
-    }
+    //public void updateOverheatText(float heat)
+    //{
+    //    overheatText.text = "Overheat: " + Mathf.Round(heat);
+    //    if (heat == 100f)
+    //    {
+    //        overheatText.color = new Color(1f, 0.0f, 0.0f);
+    //    }
+    //    else
+    //    {
+    //        overheatText.color = new Color(1f, 1f, 1f);
+    //    }
+    //}
 
     public void updateOverheatBar()
     {
-        //barScript.max = overheatScript.getMaxHeat();
-        //barScript.min = overheatScript.getMinHeat();
-        //barScript.currPercentage = overheatScript.getHeat() / overheatScript.getMaxHeat();
-
-        barScript.BarHandler(0, 1, overheatScript.getHeat() / overheatScript.getMaxHeat());
+        if (!overheatScript.isOverheated())
+        {
+            barScript.BarHandler(0, 1, overheatScript.getHeat() / overheatScript.getMaxHeat());
+        }
     }
 
 

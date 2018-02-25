@@ -256,9 +256,9 @@ public class GameManager : MonoBehaviour {
         if (m_CurrentAsteroids >= MAX_ASTEROIDS) return;
 
         // Otherwise, add an asteroid to the game.
-        GameObject temp = Instantiate(m_AsteroidPrefab, SpawnLocation(), Quaternion.identity);
-        GameObject temp2 = Instantiate(m_AsteroidPrefabMidSized, SpawnLocation(), Quaternion.identity);//midsized
-		GameObject temp3 =Instantiate(m_AsteroidPrefabBigSized, SpawnLocation(),Quaternion.identity);//bigsized
+		GameObject temp = Instantiate(m_AsteroidPrefab, SpawnLocation(), Quaternion.Euler(0f,0f,Random.Range(0f,360)));
+		GameObject temp2 = Instantiate(m_AsteroidPrefabMidSized, SpawnLocation(), Quaternion.Euler(0f,0f,Random.Range(0f,360)));//midsized
+		GameObject temp3 =Instantiate(m_AsteroidPrefabBigSized, SpawnLocation(),Quaternion.Euler(0f,0f,Random.Range(0f,360)));//bigsized
         Transform tempLoc = temp.GetComponent<Transform>();
         //tempLoc.position = SpawnLocation(); // hack fix until reason behind is found why instantiate is not setting the given Vector3 object
         Transform tempLoc2 = temp2.GetComponent<Transform>();//hack fix for the midsized

@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_damage: 1
   faction: player
+  PartEffect: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 2}
 --- !u!212 &212963059111955902
 SpriteRenderer:
   m_ObjectHideFlags: 1

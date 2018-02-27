@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
     public TextMeshProUGUI highScore;
 
     //keeps track if game is over
-    private bool gameover = false;
+    public bool gameover = false;
 
     // Modulate type of asteroid of spawn
     [SerializeField] private GameObject m_AsteroidPrefab;

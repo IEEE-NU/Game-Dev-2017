@@ -67,10 +67,6 @@ public class GameManager : MonoBehaviour {
         {
             Destroy(e.gameObject);
         }
-        m_CurrentAsteroids = 0;
-        m_TimeSinceLastAsteroid = 0;
-        //AddEnemy();
-		Wave();
     }
 
     // Called upon initialization
@@ -210,64 +206,9 @@ public class GameManager : MonoBehaviour {
 				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 			}
 		}
-
-		Wave ();
 	}
-    // Return random vector3 values to spawn asteroids
-    private Vector3 SpawnLocation()
-    {
-        float x, y, z;
-        float height = 82.5f; //m_MainCamera.orthographicSize;
-        float width = 132.5f; //height * m_MainCamera.aspect;
-        // Choose to spawn either in x or y bounds
-        if (Random.Range(0f, 1f) > 0.5f) // > 0.5 spawn X else spawn Y
-        {
-            x = Random.Range(0f, 1f) * width;
-            if (Random.Range(-1f, 1f) > 0)
-                y = height;
-            else
-                y = -height;
-            z = 0f;
 
-
-        }
-        else
-        {
-            if (Random.Range(-1f, 1f) > 0)
-                x = width;
-            else
-                x = -width;
-            y = Random.Range(0f, 1f) * height;
-            z = 0f;
-        }
-        Vector3 location = new Vector3(x, y, z);
-
-        //Debug.Log("Ast Spawn loc : " + location);
-
-        return location;
-
-    }
-
-
-    // Adds an asteroid to the game
-   /* private void AddEnemy()
-    {
-        // If we already have the maximum number of enemies, do nothing.
-        if (m_CurrentAsteroids >= MAX_ASTEROIDS) return;
-
-        // Otherwise, add an asteroid to the game.
-		GameObject temp = Instantiate(m_AsteroidPrefab, SpawnLocation(), Quaternion.Euler(0f,0f,Random.Range(0f,360)));
-		GameObject temp2 = Instantiate(m_AsteroidPrefabMidSized, SpawnLocation(), Quaternion.Euler(0f,0f,Random.Range(0f,360)));//midsized
-		GameObject temp3 =Instantiate(m_AsteroidPrefabBigSized, SpawnLocation(),Quaternion.Euler(0f,0f,Random.Range(0f,360)));//bigsized
-        Transform tempLoc = temp.GetComponent<Transform>();
-        //tempLoc.position = SpawnLocation(); // hack fix until reason behind is found why instantiate is not setting the given Vector3 object
-        Transform tempLoc2 = temp2.GetComponent<Transform>();//hack fix for the midsized
-        //tempLoc2.position = SpawnLocation();
-		Transform tempLoc3 = temp3.GetComponent<Transform> ();
-		//tempLoc3.position = SpawnLocation ();
-        m_CurrentAsteroids += 1;
-    }*/
-
+/*
 	private void SpawnObj (IList<GameObject> enemies, IList<int> numEnemy, int waveNo)
 	{
 		Debug.Log ("Why are you not calling me?");
@@ -285,7 +226,7 @@ public class GameManager : MonoBehaviour {
 				numToSpawn = 3 * waveNo - 2;
 			else if (numEnemy [i] == 1)
 				numToSpawn = 1 * waveNo - 3;
-			for (int j = 0; j <= numToSpawn; j++) 
+			for (int j = 0; j <= numToSpawn; j++)
 			{
 				Vector3 spawnPos = SpawnLocation ();
 				Instantiate (enemies [i], spawnPos, Quaternion.identity);
@@ -294,13 +235,13 @@ public class GameManager : MonoBehaviour {
 		}
 		//put time here for the function to wait for the new enemy.
 		//figure out how waitforseconds is going to work cause it doesnt like the yield before it
-	} 
+	}
 	private void Wave()
 	{
 		//Debug.Log ("Wave is being called");
 		int waveNo = 1;
 		GameObject[] gos=GameObject.FindGameObjectsWithTag("Asteroid");
-		//Debug.Log ("Num objs with Tag: " + gos.Length); 
+		//Debug.Log ("Num objs with Tag: " + gos.Length);
 		if (gos.Length == 0) {
 			waveNo++;
 			//Debug.Log ("Calling spawn");

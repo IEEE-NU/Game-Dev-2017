@@ -924,6 +924,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1046127860975412, guid: d5b85ea3f6662744fb70b8fffdab11a7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 50762770984527022, guid: d5b85ea3f6662744fb70b8fffdab11a7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d5b85ea3f6662744fb70b8fffdab11a7, type: 2}
@@ -1061,7 +1065,7 @@ MonoBehaviour:
   m_AddAsteroidTime: 3
   m_AddAsteroidTimeMidSized: 0
   m_AddAsteroidTimeBigSized: 0
-  spawnTime: 1000
+  spawnTime: 0
 --- !u!4 &1272671006
 Transform:
   m_ObjectHideFlags: 0
@@ -5028,6 +5032,10 @@ Prefab:
       value: 
       objectReference: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1,
         type: 2}
+    - target: {fileID: 1111131323028046, guid: 22dfbd1d61b62f74f8527d48ec74b630, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22dfbd1d61b62f74f8527d48ec74b630, type: 2}
   m_IsPrefabParent: 0
@@ -5188,7 +5196,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1674516140281882, guid: d030ff75ff948194d8e65531ca078480, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114125253048554058, guid: d030ff75ff948194d8e65531ca078480,
         type: 2}

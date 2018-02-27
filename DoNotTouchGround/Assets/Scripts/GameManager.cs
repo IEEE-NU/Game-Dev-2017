@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour {
     private int score = 0;
 
     //score component
-    public int healthPoints = 100;
+    public int healthPoints = 1000;
 
     //text components for the HUD
     public TextMeshProUGUI scoreText;
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
     public TextMeshProUGUI highScore;
 
     //keeps track if game is over
-    private bool gameover = false;
+    public bool gameover = false;
 
     // Modulate type of asteroid of spawn
     [SerializeField] private GameObject m_AsteroidPrefab;

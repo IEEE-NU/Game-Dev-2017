@@ -27,6 +27,7 @@ public class Asteroid : MonoBehaviour
         var xForce = asteroidDirection.x * magnitude;
         var yForce = asteroidDirection.y * magnitude;
         GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, yForce));
+		GetComponent<Rigidbody2D>().AddTorque(Random.Range(-100f,100f));
     }
 
     void OnCollisionEnter2D(Collision2D col) // Destroy when collided with asteroid or player

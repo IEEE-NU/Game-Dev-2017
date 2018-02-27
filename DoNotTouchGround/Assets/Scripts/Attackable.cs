@@ -24,12 +24,23 @@ public class Attackable : MonoBehaviour {
 		m_currHealth -= damage;
 	    if (m_currHealth <= 0)
 	    {
-	        if (gameObject.tag == "Asteroid")
-	            gameManager.AddScore(20);
-	        else
+	        if (!gameManager.gameover)
 	        {
-	            gameManager.AddScore(100);
-            }
+	            if (gameObject.tag == "Asteroid")
+	                gameManager.AddScore(20);
+	            if (gameObject.tag == "Missile")
+	                gameManager.AddScore(50);
+	            if (gameObject.tag == "Giant Asteroid")
+	                gameManager.AddScore(50);
+	            if (gameObject.tag == "Mothership")
+	                gameManager.AddScore(100);
+	            if (gameObject.tag == "Player")
+	                gameManager.AddScore(0);
+	            else
+	            {
+	                gameManager.AddScore(20);
+	            }
+	        }
 	        GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
 	        Destroy(expl, 3);

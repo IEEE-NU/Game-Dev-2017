@@ -182,6 +182,11 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 58362569047810124, guid: f295b5b7e73896d4084689566f908921,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f295b5b7e73896d4084689566f908921, type: 2}
   m_IsPrefabParent: 0
@@ -448,7 +453,7 @@ Prefab:
     - target: {fileID: 224277579661046128, guid: dd9cce67f9852834e8b1b964dc9348bd,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 83
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 224277579661046128, guid: dd9cce67f9852834e8b1b964dc9348bd,
         type: 2}
@@ -651,8 +656,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 394.2, y: 50}
+  m_AnchoredPosition: {x: -0.000017166, y: 21}
+  m_SizeDelta: {x: 259.2, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &310500683
 MonoBehaviour:
@@ -708,7 +713,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 4098
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -719,7 +724,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 12
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_enableKerning: 1
@@ -746,7 +751,7 @@ MonoBehaviour:
     spaceCount: 2
     wordCount: 3
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -1210,6 +1215,17 @@ Prefab:
       propertyPath: barScript
       value: 
       objectReference: {fileID: 493150214}
+    - target: {fileID: 114931798063411440, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: distance
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114689404363930414, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
+        type: 2}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca3d14813eb0ee641ae82ae404b9b1b0, type: 2}
   m_IsPrefabParent: 0
@@ -1612,13 +1628,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb188da9a0b8c5d4fbe7687fb97dca32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 100
+  healthPoints: 1000
   scoreText: {fileID: 1793786334}
   healthText: {fileID: 240850784}
   restartText: {fileID: 352985463}
   gameOverText: {fileID: 1532525839}
   warningText: {fileID: 1539657729}
   highScore: {fileID: 310500683}
+  gameover: 0
   m_AsteroidPrefab: {fileID: 1284734751793420, guid: 26ef6e13aa60550419b77c5af84e9da8,
     type: 2}
   m_AsteroidPrefabMidSized: {fileID: 1953304800652256, guid: fd270eb363c6ba7499c31213bebeb81d,

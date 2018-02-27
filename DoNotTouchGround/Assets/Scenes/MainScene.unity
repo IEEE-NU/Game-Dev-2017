@@ -453,7 +453,7 @@ Prefab:
     - target: {fileID: 224277579661046128, guid: dd9cce67f9852834e8b1b964dc9348bd,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 83
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 224277579661046128, guid: dd9cce67f9852834e8b1b964dc9348bd,
         type: 2}
@@ -656,8 +656,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 394.2, y: 50}
+  m_AnchoredPosition: {x: -0.000017166, y: 21}
+  m_SizeDelta: {x: 259.2, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &310500683
 MonoBehaviour:
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 4098
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 12
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_enableKerning: 1
@@ -751,7 +751,7 @@ MonoBehaviour:
     spaceCount: 2
     wordCount: 3
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0

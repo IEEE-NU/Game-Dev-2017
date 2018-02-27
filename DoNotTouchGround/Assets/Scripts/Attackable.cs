@@ -26,9 +26,15 @@ public class Attackable : MonoBehaviour {
 	    {
 	        if (gameObject.tag == "Asteroid")
 	            gameManager.AddScore(20);
-	        else
-	        {
+	        if (gameObject.tag == "Missile")
+	            gameManager.AddScore(50);
+	        if (gameObject.tag == "Giant Asteroid")
+	            gameManager.AddScore(50);
+            if (gameObject.tag == "Mothership")
 	            gameManager.AddScore(100);
+            else
+	        {
+	            gameManager.AddScore(20);
             }
 	        GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);

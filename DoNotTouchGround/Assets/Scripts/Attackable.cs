@@ -34,7 +34,7 @@ public class Attackable : MonoBehaviour {
             Destroy(this.gameObject);
 	        Destroy(expl, 3);
 		    // play sound on destruction
-		    //FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
+		    FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
         }
 	}
 }

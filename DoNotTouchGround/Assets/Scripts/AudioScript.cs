@@ -7,8 +7,10 @@ public class AudioScript : MonoBehaviour
 {
 
 	public AudioClip DestroyAsteroidClip;
-
 	public AudioSource DestroyAsteroidSource;
+
+	public AudioClip ShootProjectileClip;
+	public AudioSource ShootProjectileSource;
 
 	// Use this for initialization
 	void Start()

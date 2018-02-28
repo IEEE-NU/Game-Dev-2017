@@ -18,6 +18,10 @@ public class WaveSpawner : MonoBehaviour {
 		public int count;
 		public float rate;
 	}
+	[SerializeField]private float numSmall=7;
+	[SerializeField]private float numMid=4;
+	[SerializeField]private float numLarge=2;
+	[SerializeField]private float numMom = 1;
 
 	public Wave[] waves;
 	private int nextWave = 0;

@@ -16,6 +16,7 @@ public class AudioScript : MonoBehaviour
 	void Start()
 	{
 		DestroyAsteroidSource.clip = DestroyAsteroidClip;
+		ShootProjectileSource.clip = ShootProjectileClip;
 	}
 
 	// Update is called once per frame

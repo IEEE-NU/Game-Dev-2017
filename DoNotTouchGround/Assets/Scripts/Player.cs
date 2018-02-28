@@ -203,6 +203,20 @@ public class Player : Attackable {
         //{
         //    transform.position = new Vector2(transform.position.x, m_Yedge);
         //}
+        
+        // Play sound on key press or hold
+        if (Input.GetKey(KeyCode.Q) ||
+            Input.GetKey(KeyCode.W) ||
+            Input.GetKey(KeyCode.E) ||
+            Input.GetKey(KeyCode.R))
+            // if (Projectile != null) 
+            //Debug.Log("projectile fired");
+        {
+            FindObjectOfType<AudioScript>().ShootProjectileSource.Play();
+            Debug.Log("Fire key is pressed");
+
+        }
+
 
     }
 

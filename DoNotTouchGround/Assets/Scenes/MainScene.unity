@@ -1833,10 +1833,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99dbf4180101541ccb6763ad952026fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numSmall: 7
-  numMid: 4
-  numLarge: 2
-  numMom: 1
   waves:
   - name: Wave 1
     enemies:
@@ -1846,8 +1842,20 @@ MonoBehaviour:
     - name: Medium
       enemy: {fileID: 4109968890492412, guid: fd270eb363c6ba7499c31213bebeb81d, type: 2}
       count: 3
-    rate: 1
-  timeBetweenWaves: 5
+    rate: 0.3
+  - name: Wave 1
+    enemies:
+    - name: Small
+      enemy: {fileID: 4945239833902492, guid: 26ef6e13aa60550419b77c5af84e9da8, type: 2}
+      count: 9
+    - name: Medium
+      enemy: {fileID: 4109968890492412, guid: fd270eb363c6ba7499c31213bebeb81d, type: 2}
+      count: 3
+    - name: Large
+      enemy: {fileID: 4265992135382362, guid: 86da436c7688d5c4f80a7e0ee89c66ac, type: 2}
+      count: 3
+    rate: 0.05
+  timeBetweenWaves: 2
   waveCountdown: 0
   waveText: {fileID: 719763382}
 --- !u!1 &1295370608

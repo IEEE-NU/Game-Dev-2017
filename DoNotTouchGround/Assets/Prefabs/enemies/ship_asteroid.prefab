@@ -186,6 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_damage: 200
   faction: enemy
+  PartEffect: {fileID: 0}
 --- !u!114 &114283114719150666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -212,6 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 1500
+  asteroidLifeTime: 15
 --- !u!212 &212117957058175074
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -1659,18 +1659,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - name: Small Invasion
-    enemy: {fileID: 4945239833902492, guid: 26ef6e13aa60550419b77c5af84e9da8, type: 2}
-    count: 4
+  - name: Wave 1
+    enemies:
+    - name: Small
+      enemy: {fileID: 4945239833902492, guid: 26ef6e13aa60550419b77c5af84e9da8, type: 2}
+      count: 9
+    - name: Medium
+      enemy: {fileID: 4109968890492412, guid: fd270eb363c6ba7499c31213bebeb81d, type: 2}
+      count: 3
     rate: 1
-  - name: Medium Invasion
-    enemy: {fileID: 4109968890492412, guid: fd270eb363c6ba7499c31213bebeb81d, type: 2}
-    count: 8
-    rate: 1.5
-  - name: Big Invasion
-    enemy: {fileID: 4265992135382362, guid: 86da436c7688d5c4f80a7e0ee89c66ac, type: 2}
-    count: 12
-    rate: 2
   timeBetweenWaves: 5
   waveCountdown: 0
 --- !u!1 &1295370608

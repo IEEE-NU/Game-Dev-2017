@@ -6,6 +6,7 @@ public class Asteroid : MonoBehaviour
 {
     // Maximum speed allowed for an enemy
     [SerializeField] private float m_MaxSpeed;
+    [SerializeField] private float asteroidLifeTime;
 
     // Called when the enemy is initialized
     private void Start()
@@ -27,6 +28,8 @@ public class Asteroid : MonoBehaviour
         var xForce = asteroidDirection.x * magnitude;
         var yForce = asteroidDirection.y * magnitude;
         GetComponent<Rigidbody2D>().AddForce(new Vector2(xForce, yForce));
+
+        StartCoroutine(asteroidLife());
     }
 
     void OnCollisionEnter2D(Collision2D col) // Destroy when collided with asteroid or player
@@ -34,8 +37,11 @@ public class Asteroid : MonoBehaviour
 		GetComponent<Attackable> ().TakeDamage (10f);
     }
 
-    void OnBecameInvisible()
+    IEnumerator asteroidLife()
     {
-        Destroy(this.gameObject);
+        yield return new WaitForSeconds(asteroidLifeTime);
+        Destroy(gameObject);
     }
+
+    
 }

@@ -69,9 +69,6 @@ public class Player : Attackable {
         //    Debug.Log("Gun is ready to fire");
         //}
 
-        if (paused)
-            return;
-
         //Debug.Log(overheatScript.getHeat());
 
         //Rotates the player 
@@ -97,50 +94,60 @@ public class Player : Attackable {
         float MoveForward = 0;
         GameObject Projectile = null;
 
-        //applies a foward force to the player depending on what button is hit
-        if (Input.GetButton("Fire.25"))
+        if (!paused)
         {
+            //applies a foward force to the player depending on what button is hit
+            if (Input.GetButton("Fire.25"))
+            {
 
-            MoveForward = (float).25 * MoveSpeed * Time.deltaTime;
-            Projectile = Instantiate(m_Projectile_Prefab_One, transform.TransformPoint(-Vector3.up), Quaternion.identity);
+                MoveForward = (float) .25 * MoveSpeed * Time.deltaTime;
+                Projectile = Instantiate(m_Projectile_Prefab_One, transform.TransformPoint(-Vector3.up),
+                    Quaternion.identity);
 
-            Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
+                Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
 
-            Projectile_List.Add(Projectile);
-            overheatScript.AddHeat(.25f);
-            //Debug.Log("you are pressing the fire .25 key");
+                Projectile_List.Add(Projectile);
+                overheatScript.AddHeat(.25f);
+                //Debug.Log("you are pressing the fire .25 key");
+            }
+            else if (Input.GetButton("Fire.50"))
+            {
+                MoveForward = (float) .50 * MoveSpeed * Time.deltaTime;
+                Projectile = Instantiate(m_Projectile_Prefab_Two, transform.TransformPoint(-Vector3.up),
+                    Quaternion.identity);
+
+                Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
+                Projectile_List.Add(Projectile);
+                overheatScript.AddHeat(.5f);
+            }
+            else if (Input.GetButton("Fire.75"))
+            {
+                MoveForward = (float) .75 * MoveSpeed * Time.deltaTime;
+                Projectile = Instantiate(m_Projectile_Prefab_Three, transform.TransformPoint(-Vector3.up),
+                    Quaternion.identity);
+
+                Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
+
+                Projectile_List.Add(Projectile);
+                overheatScript.AddHeat(.75f);
+            }
+            else if (Input.GetButton("Fire1.00"))
+            {
+                MoveForward = MoveSpeed * Time.deltaTime;
+                Projectile = Instantiate(m_Projectile_Prefab_Four, transform.TransformPoint(-Vector3.up),
+                    Quaternion.identity);
+
+                Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
+
+                Projectile_List.Add(Projectile);
+
+                overheatScript.AddHeat(1f);
+            }
         }
-        else if (Input.GetButton("Fire.50"))
-        {
-            MoveForward = (float).50 * MoveSpeed * Time.deltaTime;
-            Projectile = Instantiate(m_Projectile_Prefab_Two, transform.TransformPoint(-Vector3.up), Quaternion.identity);
 
-            Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
-            Projectile_List.Add(Projectile);
-            overheatScript.AddHeat(.5f);
-        }
-        else if (Input.GetButton("Fire.75"))
-        {
-            MoveForward = (float).75 *  MoveSpeed * Time.deltaTime;
-            Projectile = Instantiate(m_Projectile_Prefab_Three, transform.TransformPoint(-Vector3.up), Quaternion.identity);
-
-            Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
-
-            Projectile_List.Add(Projectile);
-            overheatScript.AddHeat(.75f);
-        }
-        else if (Input.GetButton("Fire1.00"))
-        {
-            MoveForward =  MoveSpeed * Time.deltaTime;
-            Projectile = Instantiate(m_Projectile_Prefab_Four, transform.TransformPoint(-Vector3.up), Quaternion.identity);
-
-            Projectile.GetComponent<Rigidbody2D>().AddForce(-transform.up * m_Projectile_Force);
-
-            Projectile_List.Add(Projectile);
-
-            overheatScript.AddHeat(1f);
-        }
-
+        // Actually move the player
+        m_RigidBody.AddRelativeForce(Vector2.up * MoveForward);
+        //transform.Rotate(Vector3.back * MoveRotate);
 
         if (overheatScript.isOverheated())
         {
@@ -149,11 +156,7 @@ public class Player : Attackable {
             StartCoroutine("overHeatWait");
         }
 
-        // Actually move the player
-        m_RigidBody.AddRelativeForce(Vector2.up * MoveForward);
-        //transform.Rotate(Vector3.back * MoveRotate);
 
-        
         //Deletes projectiles based on position relative to camera
         for (int i = 0; i < Projectile_List.Count; i++)
         {
@@ -214,12 +217,16 @@ public class Player : Attackable {
         overheatScript.resetHeat();
     }
 
-	public override void TakeDamage(float damage)
-	{
-		m_currHealth -= damage;
-		if (m_currHealth <= 0) {
-			gameObject.SetActive(false);
-			gameManager.GameOver ();
-		}
-	}
+    public override void TakeDamage(float damage)
+    {
+        m_currHealth -= damage;
+        if (m_currHealth <= 0)
+        {
+            gameObject.SetActive(false);
+            gameManager.GameOver();
+            GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
+            //Destroy(this.gameObject);
+            Destroy(expl, 3);
+        }
+    }
 }

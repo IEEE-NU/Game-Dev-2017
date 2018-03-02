@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4896c610d0239674aa84cba3879e1a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_damage: 200
+  m_damage: 100
   faction: none
   PartEffect: {fileID: 0}
 --- !u!114 &114684562967319798

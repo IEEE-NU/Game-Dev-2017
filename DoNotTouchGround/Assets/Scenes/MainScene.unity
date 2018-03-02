@@ -187,6 +187,16 @@ Prefab:
       propertyPath: m_Radius
       value: 0.35
       objectReference: {fileID: 0}
+    - target: {fileID: 212147672354717858, guid: f295b5b7e73896d4084689566f908921,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 212147672354717858, guid: f295b5b7e73896d4084689566f908921,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.72
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f295b5b7e73896d4084689566f908921, type: 2}
   m_IsPrefabParent: 0
@@ -656,7 +666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.000030517578, y: 21}
+  m_AnchoredPosition: {x: 0, y: 21}
   m_SizeDelta: {x: 259.2, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &310500683
@@ -797,6 +807,15 @@ MonoBehaviour:
   m_MaxHealth: 1000
   faction: player
   explosion: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 2}
+  SpriteLevels:
+  - {fileID: 21300014, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
+  - {fileID: 21300012, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
+  - {fileID: 21300010, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
+  - {fileID: 21300008, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
+  - {fileID: 21300006, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
+  - {fileID: 21300004, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
+  - {fileID: 21300002, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
+  - {fileID: 21300000, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
 --- !u!4 &324263897 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4297570248821398, guid: f295b5b7e73896d4084689566f908921,

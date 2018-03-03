@@ -245,6 +245,8 @@ MonoBehaviour:
   DestroyAsteroidSource: {fileID: 959639510}
   ShootProjectileClip: {fileID: 8300000, guid: 5cc32a96123a24ff0b01301fb664776e, type: 3}
   ShootProjectileSource: {fileID: 200115578}
+  ShootLaserClip: {fileID: 8300000, guid: 0c50bcce1061a4ab6937b98565d83ebc, type: 3}
+  ShootLaserSource: {fileID: 1236946244}
 --- !u!82 &200115578
 AudioSource:
   m_ObjectHideFlags: 0
@@ -256,7 +258,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1694,6 +1696,8 @@ MonoBehaviour:
   DestroyAsteroidSource: {fileID: 959639510}
   ShootProjectileClip: {fileID: 8300000, guid: 5cc32a96123a24ff0b01301fb664776e, type: 3}
   ShootProjectileSource: {fileID: 200115578}
+  ShootLaserClip: {fileID: 8300000, guid: 0c50bcce1061a4ab6937b98565d83ebc, type: 3}
+  ShootLaserSource: {fileID: 1236946244}
 --- !u!82 &959639510
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1705,7 +1709,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.027
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2038,6 +2042,7 @@ Transform:
   m_Children:
   - {fileID: 959639508}
   - {fileID: 200115576}
+  - {fileID: 1236946242}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2057,6 +2062,133 @@ Transform:
   m_PrefabParentObject: {fileID: 4917414174802040, guid: ca3d14813eb0ee641ae82ae404b9b1b0,
     type: 2}
   m_PrefabInternal: {fileID: 548798003}
+--- !u!1 &1236946241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1236946242}
+  - component: {fileID: 1236946244}
+  - component: {fileID: 1236946243}
+  m_Layer: 0
+  m_Name: Shoot Laser Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1236946242
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1236946241}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1222352050}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1236946243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1236946241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da015ef5932b243368648d9d8ac0aecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestroyAsteroidClip: {fileID: 8300000, guid: 284df541c06ff44a6bec0979ed72999c, type: 3}
+  DestroyAsteroidSource: {fileID: 959639510}
+  ShootProjectileClip: {fileID: 8300000, guid: 5cc32a96123a24ff0b01301fb664776e, type: 3}
+  ShootProjectileSource: {fileID: 200115578}
+  ShootLaserClip: {fileID: 8300000, guid: 0c50bcce1061a4ab6937b98565d83ebc, type: 3}
+  ShootLaserSource: {fileID: 1236946244}
+--- !u!82 &1236946244
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1236946241}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.025
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1272671004
 GameObject:
   m_ObjectHideFlags: 0

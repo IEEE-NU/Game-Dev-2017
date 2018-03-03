@@ -12,65 +12,72 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Laser.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="72" />
+              <folding>
+                <marker date="1520034744000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1520034744000" expanded="true" signature="115:2343" ph="{...}" />
+                <marker date="1520034744000" expanded="true" signature="417:576" ph="{...}" />
+                <marker date="1520034744000" expanded="true" signature="636:788" ph="{...}" />
+                <marker date="1520034744000" expanded="true" signature="680:781" ph="{...}" />
+                <marker date="1520034744000" expanded="true" signature="833:2341" ph="{...}" />
+                <marker date="1520034744000" expanded="true" signature="952:2294" ph="{...}" />
+                <marker date="1520034744000" expanded="true" signature="1290:1878" ph="{...}" />
+                <marker date="1520034744000" expanded="true" signature="1395:1864" ph="{...}" />
+                <marker date="1520034744000" expanded="true" signature="1434:1573" ph="/* if the raycast hits something, change the end point of the laser ... */" />
+                <marker date="1520034744000" expanded="true" signature="1895:2051" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="508">
+              <caret line="246" column="65" lean-forward="false" selection-start-line="246" selection-start-column="65" selection-end-line="246" selection-end-column="65" />
+              <folding>
+                <marker date="1520036892000" expanded="false" signature="6:92" ph="..." />
+                <marker date="1520036892000" expanded="true" signature="127:8443" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="1581:1759" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="1820:7747" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="1831:2315" ph="/* if (overheatScript.getHeat() &gt;= 100) ... */" />
+                <marker date="1520036892000" expanded="true" signature="2802:4930" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="2939:3451" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="3500:3943" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="3992:4439" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="4489:4920" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="5130:5294" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="5419:6506" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="5525:6496" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="5556:5710" ph="/* legacy way of moving projectile with transforms ... */" />
+                <marker date="1520036892000" expanded="true" signature="5928:6155" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="6254:6481" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="6525:7259" ph="/* X axis bounds for player ... */" />
+                <marker date="1520036892000" expanded="true" signature="7268:7417" ph="/* if (Input.GetKey(KeyCode.Q) || ... */" />
+                <marker date="1520036892000" expanded="true" signature="7527:7740" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="7779:7918" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="7969:8441" ph="{...}" />
+                <marker date="1520036892000" expanded="true" signature="8038:8435" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AudioScript.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <marker date="1518407703000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1518407703000" expanded="true" signature="121:544" ph="{...}" />
-                <marker date="1518407703000" expanded="true" signature="254:312" ph="{...}" />
-                <marker date="1518407703000" expanded="true" signature="364:542" ph="{...}" />
-                <marker date="1518407703000" expanded="true" signature="370:538" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Asteroid.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-              <folding>
-                <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-                <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-                <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-                <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-                <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Attackable.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Attackable.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1518564605000" expanded="true" signature="6:78" ph="..." />
-                <marker date="1518564605000" expanded="true" signature="120:756" ph="{...}" />
-                <marker date="1518564605000" expanded="true" signature="337:371" ph="{...}" />
-                <marker date="1518564605000" expanded="true" signature="419:754" ph="{...}" />
-                <marker date="1518564605000" expanded="true" signature="474:751" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Projectile.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-              <folding>
-                <marker date="1518564607000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1518564607000" expanded="true" signature="184:588" ph="{...}" />
-                <marker date="1518564607000" expanded="true" signature="339:586" ph="{...}" />
-                <marker date="1518564607000" expanded="true" signature="484:583" ph="{...}" />
+                <marker date="1520034261000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1520034261000" expanded="true" signature="121:796" ph="{...}" />
+                <marker date="1520034261000" expanded="true" signature="412:564" ph="{...}" />
+                <marker date="1520034261000" expanded="true" signature="616:794" ph="{...}" />
+                <marker date="1520034261000" expanded="true" signature="622:790" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
               </folding>
             </state>
           </provider>
@@ -84,13 +91,15 @@
     </findStrings>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Background.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Attackable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -99,6 +108,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attackable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       </list>
     </option>
   </component>
@@ -110,7 +122,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1273" />
+    <option name="width" value="1280" />
     <option name="height" value="736" />
   </component>
   <component name="ProjectView">
@@ -128,7 +140,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <PATH>
@@ -145,6 +156,7 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,11 +214,12 @@
       <workItem from="1517883653205" duration="316000" />
       <workItem from="1517946122680" duration="643000" />
       <workItem from="1518563848573" duration="1038000" />
+      <workItem from="1520031235408" duration="1995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3134000" />
+    <option name="totallyTimeSpent" value="5689000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -218,7 +231,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1273" height="736" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="736" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -229,7 +242,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -254,132 +267,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <marker date="1518564607000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1518564607000" expanded="true" signature="184:588" ph="{...}" />
-            <marker date="1518564607000" expanded="true" signature="339:586" ph="{...}" />
-            <marker date="1518564607000" expanded="true" signature="484:583" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <marker date="1518291920000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1518291920000" expanded="true" signature="115:2142" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="417:576" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="636:788" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="680:781" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="833:2140" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="952:2093" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="1290:1878" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="1395:1864" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="1434:1573" ph="/* if the raycast hits something, change the end point of the laser ... */" />
-            <marker date="1518291920000" expanded="true" signature="1895:2051" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1518407703000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1518407703000" expanded="true" signature="121:544" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="254:312" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="364:542" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="370:538" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Background.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <marker date="1518407703000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1518407703000" expanded="true" signature="121:544" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="254:312" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="364:542" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="370:538" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PauseGame.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Background.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -392,12 +279,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -414,12 +301,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -429,12 +316,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -472,12 +359,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -494,12 +381,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -522,32 +409,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="757">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
-            <marker date="1518291920000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1518291920000" expanded="true" signature="115:2142" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="417:576" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="636:788" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="680:781" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="833:2140" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="952:2093" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="1290:1878" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="1395:1864" ph="{...}" />
-            <marker date="1518291920000" expanded="true" signature="1434:1573" ph="/* if the raycast hits something, change the end point of the laser ... */" />
-            <marker date="1518291920000" expanded="true" signature="1895:2051" ph="{...}" />
+            <marker date="1520016043000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016043000" expanded="true" signature="184:921" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="370:919" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="515:712" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="789:916" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="300">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Attackable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding>
-            <marker date="1518407703000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1518407703000" expanded="true" signature="121:544" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="254:312" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="364:542" ph="{...}" />
-            <marker date="1518407703000" expanded="true" signature="370:538" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
+            <marker date="1520016571000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016571000" expanded="true" signature="120:1621" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="373:629" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="527:623" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="680:1619" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="735:1616" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="778:1346" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="1262:1335" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -557,39 +455,389 @@
         <state relative-caret-position="540">
           <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
           <folding>
-            <marker date="1517603054000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1517603054000" expanded="true" signature="117:1231" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="278:998" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="628:744" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
-            <marker date="1517603054000" expanded="true" signature="1093:1153" ph="{...}" />
-            <marker date="1517603054000" expanded="true" signature="1183:1229" ph="{...}" />
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding>
+            <marker date="1520034261000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520034261000" expanded="true" signature="121:796" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="412:564" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="616:794" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="622:790" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="210">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
-            <marker date="1518564607000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1518564607000" expanded="true" signature="184:588" ph="{...}" />
-            <marker date="1518564607000" expanded="true" signature="339:586" ph="{...}" />
-            <marker date="1518564607000" expanded="true" signature="484:583" ph="{...}" />
+            <marker date="1520016043000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016043000" expanded="true" signature="184:921" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="370:919" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="515:712" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="789:916" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520034261000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520034261000" expanded="true" signature="121:796" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="412:564" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="616:794" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="622:790" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Background.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <marker date="1520034261000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520034261000" expanded="true" signature="121:796" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="412:564" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="616:794" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="622:790" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PauseGame.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Background.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="98" column="8" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PauseGame.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Background.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="98" column="8" lean-forward="false" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Background.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-717">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <marker date="1520016043000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016043000" expanded="true" signature="184:921" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="370:919" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="515:712" ph="{...}" />
+            <marker date="1520016043000" expanded="true" signature="789:916" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Attackable.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="463">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <marker date="1518564605000" expanded="true" signature="6:78" ph="..." />
-            <marker date="1518564605000" expanded="true" signature="120:756" ph="{...}" />
-            <marker date="1518564605000" expanded="true" signature="337:371" ph="{...}" />
-            <marker date="1518564605000" expanded="true" signature="419:754" ph="{...}" />
-            <marker date="1518564605000" expanded="true" signature="474:751" ph="{...}" />
+            <marker date="1520016571000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016571000" expanded="true" signature="120:1621" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="373:629" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="527:623" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="680:1619" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="735:1616" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="778:1346" ph="{...}" />
+            <marker date="1520016571000" expanded="true" signature="1262:1335" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
+            <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
+            <marker date="1520016352000" expanded="true" signature="1279:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1520034261000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520034261000" expanded="true" signature="121:796" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="412:564" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="616:794" ph="{...}" />
+            <marker date="1520034261000" expanded="true" signature="622:790" ph="/* Checks to see if asteroid is destroyed in Projectile.cs ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="72" />
+          <folding>
+            <marker date="1520034744000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520034744000" expanded="true" signature="115:2343" ph="{...}" />
+            <marker date="1520034744000" expanded="true" signature="417:576" ph="{...}" />
+            <marker date="1520034744000" expanded="true" signature="636:788" ph="{...}" />
+            <marker date="1520034744000" expanded="true" signature="680:781" ph="{...}" />
+            <marker date="1520034744000" expanded="true" signature="833:2341" ph="{...}" />
+            <marker date="1520034744000" expanded="true" signature="952:2294" ph="{...}" />
+            <marker date="1520034744000" expanded="true" signature="1290:1878" ph="{...}" />
+            <marker date="1520034744000" expanded="true" signature="1395:1864" ph="{...}" />
+            <marker date="1520034744000" expanded="true" signature="1434:1573" ph="/* if the raycast hits something, change the end point of the laser ... */" />
+            <marker date="1520034744000" expanded="true" signature="1895:2051" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="246" column="65" lean-forward="false" selection-start-line="246" selection-start-column="65" selection-end-line="246" selection-end-column="65" />
+          <folding>
+            <marker date="1520036892000" expanded="false" signature="6:92" ph="..." />
+            <marker date="1520036892000" expanded="true" signature="127:8443" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="1581:1759" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="1820:7747" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="1831:2315" ph="/* if (overheatScript.getHeat() &gt;= 100) ... */" />
+            <marker date="1520036892000" expanded="true" signature="2802:4930" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="2939:3451" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="3500:3943" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="3992:4439" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="4489:4920" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="5130:5294" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="5419:6506" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="5525:6496" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="5556:5710" ph="/* legacy way of moving projectile with transforms ... */" />
+            <marker date="1520036892000" expanded="true" signature="5928:6155" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="6254:6481" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="6525:7259" ph="/* X axis bounds for player ... */" />
+            <marker date="1520036892000" expanded="true" signature="7268:7417" ph="/* if (Input.GetKey(KeyCode.Q) || ... */" />
+            <marker date="1520036892000" expanded="true" signature="7527:7740" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="7779:7918" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="7969:8441" ph="{...}" />
+            <marker date="1520036892000" expanded="true" signature="8038:8435" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -63,6 +63,11 @@ public class Laser : MonoBehaviour {
                 //if there is no hit, render along the ray
                 lineRenderer.SetPosition(1, ray.GetPoint(distance));
             }
+            
+            // Play sound on laser being fired
+            FindObjectOfType<AudioScript>().ShootLaserSource.PlayOneShot
+                (FindObjectOfType<AudioScript>().ShootLaserClip); 
+
 
             yield return null;
         }

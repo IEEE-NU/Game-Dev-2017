@@ -206,6 +206,21 @@ public class Player : Attackable {
         //{
         //    transform.position = new Vector2(transform.position.x, m_Yedge);
         //}
+        
+        // Play sound on key press or hold
+        /*if (Input.GetKey(KeyCode.Q) ||
+            Input.GetKey(KeyCode.W) ||
+            Input.GetKey(KeyCode.E) ||
+            Input.GetKey(KeyCode.R))*/
+
+        // Play sound on projectile being fired (if projectile exists)
+        if (Projectile != null)      
+        {
+            Debug.Log("projectile fired");
+    
+            FindObjectOfType<AudioScript>().ShootProjectileSource.PlayOneShot
+            (FindObjectOfType<AudioScript>().ShootProjectileClip);
+        }
 
     }
 
@@ -227,6 +242,9 @@ public class Player : Attackable {
             GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
             //Destroy(this.gameObject);
             Destroy(expl, 3);
+            
+            // Play sound on player destruction
+            FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
         }
     }
 }

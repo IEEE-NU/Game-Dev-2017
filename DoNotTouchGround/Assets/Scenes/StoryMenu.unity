@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -535,8 +535,7 @@ GameObject:
   - component: {fileID: 525327366}
   - component: {fileID: 525327365}
   m_Layer: 0
-  m_Name: TMP SubMeshUI [Electronic Highway Sign SDF Material + LiberationSans SDF
-    Atlas]
+  m_Name: TMP SubMeshUI [Rocket Rinder SDF Material + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,7 +627,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.21051025, y: -142.27742}
+  m_AnchoredPosition: {x: -34, y: -194}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318245585
@@ -728,7 +727,7 @@ GameObject:
   - component: {fileID: 1676956934}
   - component: {fileID: 1676956933}
   m_Layer: 0
-  m_Name: MainMenu
+  m_Name: Story
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -750,8 +749,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.2105133, y: 18.948738}
-  m_SizeDelta: {x: 460.7, y: 303.1}
+  m_AnchoredPosition: {x: 99.77911, y: -7.2504997}
+  m_SizeDelta: {x: 519, y: 403.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1676956933
 MonoBehaviour:
@@ -804,8 +803,9 @@ MonoBehaviour:
     of this ship have to defend humanity\u2019s only hope of survival;  Good luck
     Admiral. \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a2dd396b590c424aa031100ced8b60f, type: 2}
+  m_sharedMaterial: {fileID: 21454138760619052, guid: 8a2dd396b590c424aa031100ced8b60f,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -829,13 +829,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 11.5
-  m_fontSizeBase: 11.5
+  m_fontSize: 16.5
+  m_fontSizeBase: 16.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_textAlignment: 257
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -215.06589, y: -71.39014, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1676956934}
     characterCount: 1506
@@ -874,9 +874,9 @@ MonoBehaviour:
     spaceCount: 263
     wordCount: 254
     linkCount: 0
-    lineCount: 22
+    lineCount: 23
     pageCount: 1
-    materialCount: 1
+    materialCount: 2
   m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0

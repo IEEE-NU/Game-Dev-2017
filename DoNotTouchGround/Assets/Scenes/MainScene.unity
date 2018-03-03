@@ -2365,6 +2365,9 @@ MonoBehaviour:
     - name: Missile
       enemy: {fileID: 4175829093369740, guid: 22dfbd1d61b62f74f8527d48ec74b630, type: 2}
       count: 1
+    - name: MOOM
+      enemy: {fileID: 4430390996447268, guid: d5b85ea3f6662744fb70b8fffdab11a7, type: 2}
+      count: 1
     rate: 0.4
   - name: Wave 2
     enemies:

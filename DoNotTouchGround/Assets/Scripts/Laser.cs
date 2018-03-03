@@ -26,7 +26,11 @@ public class Laser : MonoBehaviour {
         {
             StopCoroutine("FireLaser");
             StartCoroutine("FireLaser");
+            
+            // Play pew sound on initial laser firing
+            FindObjectOfType<AudioScript>().PewSource.Play();
         }
+        
 
     }
 
@@ -36,12 +40,8 @@ public class Laser : MonoBehaviour {
         //make the line visible
         lineRenderer.enabled = true;
         
-        // Play pew sound on initial laser firing
-       /* if (Input.GetButtonDown("Jump"))
-        {
-            Player pew sound
-        }*/
-
+        
+        
         while (Input.GetButton("Jump"))
         {   
             //Makes a new ray that the laser will be rendered upon
@@ -62,6 +62,10 @@ public class Laser : MonoBehaviour {
                     hit.rigidbody.AddForceAtPosition(transform.up * 50, hit.point);
 					hit.rigidbody.gameObject.GetComponent<Attackable> ().TakeDamage (Time.deltaTime * laserDamageRate);
 					Instantiate (LaserPrefab, hit.point, Quaternion.Euler(transform.eulerAngles));
+                    
+                    // Play sound when laser hits enemy 
+                    //FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
+
                 }
             }
             else

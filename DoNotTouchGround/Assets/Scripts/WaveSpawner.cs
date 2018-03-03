@@ -141,6 +141,8 @@ public class WaveSpawner : MonoBehaviour {
 	{
 		Debug.Log("Spawning Enemy: " + _enemy.name);
 		// Spawn _enemy
+		if (_enemy == null)
+			return;
 		Instantiate (_enemy, SpawnLocation(), transform.rotation);
 	}
 

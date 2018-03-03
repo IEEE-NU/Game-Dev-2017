@@ -15,6 +15,6 @@ public class TitleCamera : MonoBehaviour {
 		float t = Time.realtimeSinceStartup / CameraSpeed;
 		float x = Mathf.Cos (t) * CameraRadius;
 		float y = Mathf.Sin (t) * CameraRadius;
-		transform.position = new Vector3 (x, y, 0f);
+		transform.position = new Vector3 (x, y, transform.position.z);
 	}
 }

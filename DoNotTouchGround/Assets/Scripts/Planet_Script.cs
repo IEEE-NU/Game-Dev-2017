@@ -6,7 +6,7 @@ public class Planet_Script : Attackable {
 
 	public List<Sprite> SpriteLevels;
 
-    private GameManager gameManager;
+  private GameManager gameManager;
 
 	private SpriteRenderer m_SpriteRenderer;
 
@@ -27,17 +27,17 @@ public class Planet_Script : Attackable {
 		m_currHealth = m_MaxHealth;
 		m_SpriteRenderer = GetComponent<SpriteRenderer> ();
     }
-	
+
 	// Update is called once per frame
 	void Update () {}
 
-	public override void TakeDamage(float damage)  
+	public override void TakeDamage(float damage)
         {
 			m_currHealth -= damage;
 			gameManager.SetHealth(m_currHealth);
 			float ratio = (m_currHealth / m_MaxHealth);
 		GetComponent<SpriteRenderer> ().sprite = SpriteLevels [Mathf.FloorToInt (Mathf.Clamp(ratio,0f,0.999f) * SpriteLevels.Count)];
-			
+			CameraShake.shakecamera();
 			if (m_currHealth <= 0)
                 {
                     //added code to make the explosion happen on planet death
@@ -45,7 +45,7 @@ public class Planet_Script : Attackable {
                     Destroy(this.gameObject);
                     Destroy(expl, 3);
                     gameManager.GameOver();
-                    gameObject.SetActive(false);                    
+                    gameObject.SetActive(false);
                 }
-        }    
+        }
 }

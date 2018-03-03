@@ -47,5 +47,9 @@ public class Planet_Script : Attackable {
                     gameManager.GameOver();
                     gameObject.SetActive(false);
                 }
+	        
+	        // Play sound when asteroids hit planet
+	        FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
+	        
         }
 }

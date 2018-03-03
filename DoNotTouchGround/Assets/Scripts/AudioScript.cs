@@ -14,6 +14,9 @@ public class AudioScript : MonoBehaviour
 	
 	public AudioClip ShootLaserClip;
 	public AudioSource ShootLaserSource;
+	
+	public AudioClip PewClip;
+	public AudioSource PewSource;
 
 
 	// Use this for initialization
@@ -22,6 +25,7 @@ public class AudioScript : MonoBehaviour
 		DestroyAsteroidSource.clip = DestroyAsteroidClip;
 		ShootProjectileSource.clip = ShootProjectileClip;
 		ShootLaserSource.clip = ShootLaserClip;
+		PewSource.clip = PewClip;
 	}
 
 	// Update is called once per frame

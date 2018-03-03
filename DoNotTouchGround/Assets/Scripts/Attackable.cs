@@ -44,7 +44,7 @@ public class Attackable : MonoBehaviour {
 	        GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
 	        Destroy(expl, 3);
-		    // play sound on destruction
+		    // play sound on destruction of asteroids
 		    FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
         }
 	}

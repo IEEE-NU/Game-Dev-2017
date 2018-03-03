@@ -41,9 +41,6 @@ public class WaveSpawner : MonoBehaviour {
 	void Start ()
 	{
 		waveCountdown = timeBetweenWaves;
-
-	    waveText.text = "Wave 0" ;
-	    StartCoroutine(waveTextWait());
     }
 
 	// Update is called once per frame
@@ -68,6 +65,8 @@ public class WaveSpawner : MonoBehaviour {
 		{
 				if (state != SpawnState.SPAWNING)
 				{
+					waveText.text = "Wave " + nextWave;
+					StartCoroutine (waveTextWait ());
 					// Start spawning wave
 					StartCoroutine( SpawnWave ( waves[nextWave] ) );
 				}
@@ -95,8 +94,6 @@ public class WaveSpawner : MonoBehaviour {
 		{
 			nextWave++;
 		}
-		waveText.text = "Wave " + nextWave;
-		StartCoroutine (waveTextWait ());
 	}
 
 	bool EnemyIsAlive()

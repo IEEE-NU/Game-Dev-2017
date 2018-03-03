@@ -46,7 +46,7 @@ public class Asteroid : MonoBehaviour
     void Update ()
     {
 
-        transform.Rotate(Time.deltaTime,0,2);
+        transform.Rotate(Time.deltaTime,0,1);
     }
 
 

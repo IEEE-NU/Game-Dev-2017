@@ -954,9 +954,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f07ba90c9b2c4387b172f0e6e8a06b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camTransform: {fileID: 1948232661}
+  camTransform: {fileID: 0}
   shakeDuration: 1
-  shakeAmount: 10
+  shakeAmount: 25
   decreaseFactor: 1
 --- !u!4 &324263897 stripped
 Transform:
@@ -7084,11 +7084,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1929799269}
---- !u!4 &1948232661 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4484313249943984, guid: 201e93549a1890a41a7947da896009ae,
-    type: 2}
-  m_PrefabInternal: {fileID: 1784660787}
 --- !u!1001 &1981054796
 Prefab:
   m_ObjectHideFlags: 0

@@ -35,6 +35,12 @@ public class Laser : MonoBehaviour {
     {   
         //make the line visible
         lineRenderer.enabled = true;
+        
+        // Play pew sound on initial laser firing
+       /* if (Input.GetButtonDown("Jump"))
+        {
+            Player pew sound
+        }*/
 
         while (Input.GetButton("Jump"))
         {   

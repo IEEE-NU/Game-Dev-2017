@@ -12,23 +12,42 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Laser.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Laser.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="72" />
+            <state relative-caret-position="348">
+              <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
               <folding>
-                <marker date="1520034744000" expanded="false" signature="6:78" ph="..." />
-                <marker date="1520034744000" expanded="true" signature="115:2343" ph="{...}" />
-                <marker date="1520034744000" expanded="true" signature="417:576" ph="{...}" />
-                <marker date="1520034744000" expanded="true" signature="636:788" ph="{...}" />
-                <marker date="1520034744000" expanded="true" signature="680:781" ph="{...}" />
-                <marker date="1520034744000" expanded="true" signature="833:2341" ph="{...}" />
-                <marker date="1520034744000" expanded="true" signature="952:2294" ph="{...}" />
-                <marker date="1520034744000" expanded="true" signature="1290:1878" ph="{...}" />
-                <marker date="1520034744000" expanded="true" signature="1395:1864" ph="{...}" />
-                <marker date="1520034744000" expanded="true" signature="1434:1573" ph="/* if the raycast hits something, change the end point of the laser ... */" />
-                <marker date="1520034744000" expanded="true" signature="1895:2051" ph="{...}" />
+                <marker date="1520045685000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1520045685000" expanded="true" signature="115:2496" ph="{...}" />
+                <marker date="1520045685000" expanded="true" signature="417:576" ph="{...}" />
+                <marker date="1520045685000" expanded="true" signature="636:788" ph="{...}" />
+                <marker date="1520045685000" expanded="true" signature="680:781" ph="{...}" />
+                <marker date="1520045685000" expanded="true" signature="833:2494" ph="{...}" />
+                <marker date="1520045685000" expanded="true" signature="978:1064" ph="/* if (Input.GetButtonDown(&quot;Jump&quot;)) ... */" />
+                <marker date="1520045685000" expanded="true" signature="1105:2447" ph="{...}" />
+                <marker date="1520045685000" expanded="true" signature="1443:2031" ph="{...}" />
+                <marker date="1520045685000" expanded="true" signature="1548:2017" ph="{...}" />
+                <marker date="1520045685000" expanded="true" signature="1587:1726" ph="/* if the raycast hits something, change the end point of the laser ... */" />
+                <marker date="1520045685000" expanded="true" signature="2048:2204" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Planet_Script.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Planet_Script.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1520042718000" expanded="false" signature="6:78" ph="..." />
+                <marker date="1520042718000" expanded="true" signature="120:1620" ph="{...}" />
+                <marker date="1520042718000" expanded="true" signature="330:802" ph="{...}" />
+                <marker date="1520042718000" expanded="true" signature="454:550" ph="{...}" />
+                <marker date="1520042718000" expanded="true" signature="563:640" ph="{...}" />
+                <marker date="1520042718000" expanded="true" signature="906:1618" ph="{...}" />
+                <marker date="1520042718000" expanded="true" signature="1214:1608" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -37,41 +56,40 @@
       <file leaf-file-name="Player.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="246" column="65" lean-forward="false" selection-start-line="246" selection-start-column="65" selection-end-line="246" selection-end-column="65" />
+            <state relative-caret-position="640">
+              <caret line="224" column="65" lean-forward="false" selection-start-line="224" selection-start-column="65" selection-end-line="224" selection-end-column="65" />
               <folding>
-                <marker date="1520036892000" expanded="false" signature="6:92" ph="..." />
-                <marker date="1520036892000" expanded="true" signature="127:8443" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="1581:1759" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="1820:7747" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="1831:2315" ph="/* if (overheatScript.getHeat() &gt;= 100) ... */" />
-                <marker date="1520036892000" expanded="true" signature="2802:4930" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="2939:3451" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="3500:3943" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="3992:4439" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="4489:4920" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="5130:5294" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="5419:6506" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="5525:6496" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="5556:5710" ph="/* legacy way of moving projectile with transforms ... */" />
-                <marker date="1520036892000" expanded="true" signature="5928:6155" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="6254:6481" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="6525:7259" ph="/* X axis bounds for player ... */" />
-                <marker date="1520036892000" expanded="true" signature="7268:7417" ph="/* if (Input.GetKey(KeyCode.Q) || ... */" />
-                <marker date="1520036892000" expanded="true" signature="7527:7740" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="7779:7918" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="7969:8441" ph="{...}" />
-                <marker date="1520036892000" expanded="true" signature="8038:8435" ph="{...}" />
+                <marker date="1520044680000" expanded="false" signature="6:92" ph="..." />
+                <marker date="1520044680000" expanded="true" signature="127:7793" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="1624:1665" ph="/* if (overheatScript.getHeat() &gt;= 100) ... */" />
+                <marker date="1520044680000" expanded="true" signature="1624:7097" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="2152:4280" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="2289:2801" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="2850:3293" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="3342:3789" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="3839:4270" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="4480:4644" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="4769:5856" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="4875:5846" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="4906:5060" ph="/* legacy way of moving projectile with transforms ... */" />
+                <marker date="1520044680000" expanded="true" signature="5278:5505" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="5604:5831" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="5875:6609" ph="/* X axis bounds for player ... */" />
+                <marker date="1520044680000" expanded="true" signature="6618:6767" ph="/* if (Input.GetKey(KeyCode.Q) || ... */" />
+                <marker date="1520044680000" expanded="true" signature="6877:7090" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="7129:7268" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="7319:7791" ph="{...}" />
+                <marker date="1520044680000" expanded="true" signature="7388:7785" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainMenu.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <marker date="1520040359000" expanded="false" signature="6:113" ph="..." />
                 <marker date="1520040359000" expanded="true" signature="153:757" ph="{...}" />
@@ -115,6 +133,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Planet_Script.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseGame.cs" root0="FORCE_HIGHLIGHTING" />
@@ -128,9 +147,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attackable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
       </list>
     </option>
   </component>
@@ -239,7 +258,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6018000" />
+    <option name="totallyTimeSpent" value="6284000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,7 +319,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -322,7 +340,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -337,7 +354,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -380,7 +396,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -402,7 +417,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -469,7 +483,6 @@
           <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -568,7 +581,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -590,7 +602,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -619,7 +630,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -641,7 +651,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -656,7 +665,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -699,7 +707,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -721,7 +728,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -781,7 +787,6 @@
           <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
             <marker date="1520016352000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520016352000" expanded="true" signature="117:1387" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="331:1092" ph="{...}" />
             <marker date="1520016352000" expanded="true" signature="681:797" ph="/* Add a random force to the enemy, effectively moving them in a ... */" />
             <marker date="1520016352000" expanded="true" signature="1187:1247" ph="{...}" />
@@ -806,51 +811,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="67" column="11" lean-forward="false" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="72" />
+        <state relative-caret-position="348">
+          <caret line="38" column="49" lean-forward="false" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
           <folding>
-            <marker date="1520034744000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520034744000" expanded="true" signature="115:2343" ph="{...}" />
-            <marker date="1520034744000" expanded="true" signature="417:576" ph="{...}" />
-            <marker date="1520034744000" expanded="true" signature="636:788" ph="{...}" />
-            <marker date="1520034744000" expanded="true" signature="680:781" ph="{...}" />
-            <marker date="1520034744000" expanded="true" signature="833:2341" ph="{...}" />
-            <marker date="1520034744000" expanded="true" signature="952:2294" ph="{...}" />
-            <marker date="1520034744000" expanded="true" signature="1290:1878" ph="{...}" />
-            <marker date="1520034744000" expanded="true" signature="1395:1864" ph="{...}" />
-            <marker date="1520034744000" expanded="true" signature="1434:1573" ph="/* if the raycast hits something, change the end point of the laser ... */" />
-            <marker date="1520034744000" expanded="true" signature="1895:2051" ph="{...}" />
+            <marker date="1520045685000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520045685000" expanded="true" signature="115:2496" ph="{...}" />
+            <marker date="1520045685000" expanded="true" signature="417:576" ph="{...}" />
+            <marker date="1520045685000" expanded="true" signature="636:788" ph="{...}" />
+            <marker date="1520045685000" expanded="true" signature="680:781" ph="{...}" />
+            <marker date="1520045685000" expanded="true" signature="833:2494" ph="{...}" />
+            <marker date="1520045685000" expanded="true" signature="978:1064" ph="/* if (Input.GetButtonDown(&quot;Jump&quot;)) ... */" />
+            <marker date="1520045685000" expanded="true" signature="1105:2447" ph="{...}" />
+            <marker date="1520045685000" expanded="true" signature="1443:2031" ph="{...}" />
+            <marker date="1520045685000" expanded="true" signature="1548:2017" ph="{...}" />
+            <marker date="1520045685000" expanded="true" signature="1587:1726" ph="/* if the raycast hits something, change the end point of the laser ... */" />
+            <marker date="1520045685000" expanded="true" signature="2048:2204" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="246" column="65" lean-forward="false" selection-start-line="246" selection-start-column="65" selection-end-line="246" selection-end-column="65" />
+        <state relative-caret-position="640">
+          <caret line="224" column="65" lean-forward="false" selection-start-line="224" selection-start-column="65" selection-end-line="224" selection-end-column="65" />
           <folding>
-            <marker date="1520036892000" expanded="false" signature="6:92" ph="..." />
-            <marker date="1520036892000" expanded="true" signature="127:8443" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="1581:1759" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="1820:7747" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="1831:2315" ph="/* if (overheatScript.getHeat() &gt;= 100) ... */" />
-            <marker date="1520036892000" expanded="true" signature="2802:4930" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="2939:3451" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="3500:3943" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="3992:4439" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="4489:4920" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="5130:5294" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="5419:6506" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="5525:6496" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="5556:5710" ph="/* legacy way of moving projectile with transforms ... */" />
-            <marker date="1520036892000" expanded="true" signature="5928:6155" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="6254:6481" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="6525:7259" ph="/* X axis bounds for player ... */" />
-            <marker date="1520036892000" expanded="true" signature="7268:7417" ph="/* if (Input.GetKey(KeyCode.Q) || ... */" />
-            <marker date="1520036892000" expanded="true" signature="7527:7740" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="7779:7918" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="7969:8441" ph="{...}" />
-            <marker date="1520036892000" expanded="true" signature="8038:8435" ph="{...}" />
+            <marker date="1520044680000" expanded="false" signature="6:92" ph="..." />
+            <marker date="1520044680000" expanded="true" signature="127:7793" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="1624:1665" ph="/* if (overheatScript.getHeat() &gt;= 100) ... */" />
+            <marker date="1520044680000" expanded="true" signature="1624:7097" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="2152:4280" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="2289:2801" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="2850:3293" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="3342:3789" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="3839:4270" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="4480:4644" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="4769:5856" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="4875:5846" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="4906:5060" ph="/* legacy way of moving projectile with transforms ... */" />
+            <marker date="1520044680000" expanded="true" signature="5278:5505" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="5604:5831" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="5875:6609" ph="/* X axis bounds for player ... */" />
+            <marker date="1520044680000" expanded="true" signature="6618:6767" ph="/* if (Input.GetKey(KeyCode.Q) || ... */" />
+            <marker date="1520044680000" expanded="true" signature="6877:7090" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="7129:7268" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="7319:7791" ph="{...}" />
+            <marker date="1520044680000" expanded="true" signature="7388:7785" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -858,7 +863,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <marker date="1520040359000" expanded="false" signature="6:113" ph="..." />
             <marker date="1520040359000" expanded="true" signature="153:757" ph="{...}" />

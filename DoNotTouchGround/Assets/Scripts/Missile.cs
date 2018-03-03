@@ -12,9 +12,9 @@ public class Missile : MonoBehaviour {
 	float m_targetSpeed;
 	GameObject playerTarget;
 
-	const float ACCELERATION = 0.5f;
-	const float CHASE_TOLERANCE = 0.2f;
-	const float PURSUE_DISTANCE = 200f;
+	[SerializeField] float ACCELERATION = 0.5f;
+    [SerializeField] float CHASE_TOLERANCE = 0.2f;
+    [SerializeField] float PURSUE_DISTANCE = 1000f;
 
 	SpriteRenderer m_sprite;
 	TrailRenderer trail;

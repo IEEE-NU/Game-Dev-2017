@@ -247,6 +247,8 @@ MonoBehaviour:
   ShootProjectileSource: {fileID: 200115578}
   ShootLaserClip: {fileID: 8300000, guid: 0c50bcce1061a4ab6937b98565d83ebc, type: 3}
   ShootLaserSource: {fileID: 1236946244}
+  PewClip: {fileID: 0}
+  PewSource: {fileID: 0}
 --- !u!82 &200115578
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1618,6 +1620,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &912428027 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1030699187210946, guid: 201e93549a1890a41a7947da896009ae,
+    type: 2}
+  m_PrefabInternal: {fileID: 1784660787}
+--- !u!114 &912428028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 912428027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f07ba90c9b2c4387b172f0e6e8a06b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 0}
+  shakeDuration: 0.5
+  shakeAmount: 20
+  decreaseFactor: 1
 --- !u!1 &952552217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,6 +1809,8 @@ MonoBehaviour:
   ShootProjectileSource: {fileID: 200115578}
   ShootLaserClip: {fileID: 8300000, guid: 0c50bcce1061a4ab6937b98565d83ebc, type: 3}
   ShootLaserSource: {fileID: 1236946244}
+  PewClip: {fileID: 0}
+  PewSource: {fileID: 0}
 --- !u!82 &959639510
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2198,6 +2222,8 @@ MonoBehaviour:
   ShootProjectileSource: {fileID: 200115578}
   ShootLaserClip: {fileID: 8300000, guid: 0c50bcce1061a4ab6937b98565d83ebc, type: 3}
   ShootLaserSource: {fileID: 1236946244}
+  PewClip: {fileID: 0}
+  PewSource: {fileID: 0}
 --- !u!82 &1236946244
 AudioSource:
   m_ObjectHideFlags: 0

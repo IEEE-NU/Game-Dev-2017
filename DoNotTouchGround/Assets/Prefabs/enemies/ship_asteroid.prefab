@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MaxSpeed: 1500
-  asteroidLifeTime: 15
+  asteroidLifeTime: 25
 --- !u!212 &212117957058175074
 SpriteRenderer:
   m_ObjectHideFlags: 1

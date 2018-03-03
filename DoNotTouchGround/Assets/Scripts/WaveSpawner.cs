@@ -41,7 +41,10 @@ public class WaveSpawner : MonoBehaviour {
 	void Start ()
 	{
 		waveCountdown = timeBetweenWaves;
-	}
+
+	    waveText.text = "Wave 0" ;
+	    StartCoroutine(waveTextWait());
+    }
 
 	// Update is called once per frame
 	void Update ()

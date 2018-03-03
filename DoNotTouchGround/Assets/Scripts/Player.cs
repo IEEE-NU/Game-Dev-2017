@@ -12,7 +12,6 @@ public class Player : Attackable {
 
     // Amount of force applied to the player every frame
     [SerializeField] public float MoveSpeed = 10;
-    [SerializeField] public float RotateSpeed = 40;
 
     // Amount of force to apply to shot projectile
     [SerializeField] private float m_Projectile_Force = 3;
@@ -29,11 +28,6 @@ public class Player : Attackable {
     public GameObject m_Projectile_Prefab_Two;
     public GameObject m_Projectile_Prefab_Three;
     public GameObject m_Projectile_Prefab_Four;
-
-    //The bounds that the player can move in
-    [SerializeField] private float m_Xedge = 50;
-    [SerializeField] private float m_Yedge = 50;
-
 
     private LineRenderer lineRenderer;
     //Keeps track of where the raycastHit is actually encountering a collider
@@ -58,22 +52,6 @@ public class Player : Attackable {
 
     // Update is called once per frame
     void Update () {
-
-        //if (overheatScript.getHeat() >= 100)
-        //{
-        //    Debug.Log("Gun is overheated");
-        //    Debug.Log(overheatScript.getHeat());
-        //}
-        //else
-        //{
-        //    Debug.Log("Gun is ready to fire");
-        //}
-
-        //Debug.Log(overheatScript.getHeat());
-
-        //Rotates the player 
-        //float MoveRotate = Input.GetAxis("Horizontal") * RotateSpeed * Time.deltaTime;
-        // ROTATE the ship.
 
         // Grab our rotation quaternion
         Quaternion rot = transform.rotation;

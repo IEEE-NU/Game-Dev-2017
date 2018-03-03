@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour {
     private int score = 0;
 
     //score component
-    public int healthPoints = 1000;
+    public int healthPoints = 2000;
 
     //text components for the HUD
     public TextMeshProUGUI scoreText;

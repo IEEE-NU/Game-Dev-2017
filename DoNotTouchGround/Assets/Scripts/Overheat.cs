@@ -6,7 +6,7 @@ public class Overheat : MonoBehaviour
 {
     [SerializeField] private float currentHeat = 0;
     [SerializeField] private float coolRate = 20;
-    [SerializeField] private float maxHeat = 100;
+    [SerializeField] private float maxHeat = 200;
     [SerializeField] private float minHeat = 0;
     //[SerializeField] private float heatToAdd = 1;
 
@@ -26,7 +26,7 @@ public class Overheat : MonoBehaviour
 
     public bool isOverheated()
     {
-        if (currentHeat == 100)
+        if (currentHeat == 200)
             return true;
         else
             return false;

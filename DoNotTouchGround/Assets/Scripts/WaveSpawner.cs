@@ -148,8 +148,8 @@ public class WaveSpawner : MonoBehaviour {
 	private Vector3 SpawnLocation()
 	{
 			float x, y, z;
-			float height = 165f; //m_MainCamera.orthographicSize;
-			float width = 265f; //height * m_MainCamera.aspect;
+			float height = 200f; //m_MainCamera.orthographicSize;
+			float width = 300f; //height * m_MainCamera.aspect;
 			// Choose to spawn either in x or y bounds
 			if (Random.Range(0f, 1f) > 0.5f) // > 0.5 spawn X else spawn Y
 			{

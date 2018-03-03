@@ -935,7 +935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxHealth: 1000
   faction: player
-  explosion: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 2}
+  explosion: {fileID: 1218660024835554, guid: 2ed5a83142c46479481265ba2ce5e38d, type: 2}
   SpriteLevels:
   - {fileID: 21300014, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}
   - {fileID: 21300012, guid: 1e41689c232e58848bc1e7ca18486960, type: 3}

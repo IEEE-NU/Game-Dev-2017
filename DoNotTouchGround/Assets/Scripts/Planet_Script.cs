@@ -46,6 +46,8 @@ public class Planet_Script : Attackable {
                     Destroy(expl, 3);
                     gameManager.GameOver();
                     gameObject.SetActive(false);
+	                // Play sound when planet is destroyed
+	                FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
                 }
 	        
 	        // Play sound when asteroids hit planet

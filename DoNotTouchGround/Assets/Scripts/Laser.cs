@@ -64,7 +64,7 @@ public class Laser : MonoBehaviour {
 					Instantiate (LaserPrefab, hit.point, Quaternion.Euler(transform.eulerAngles));
                     
                     // Play sound when laser hits enemy 
-                    //FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
+                    FindObjectOfType<AudioScript>().DestroyAsteroidSource.Play();
 
                 }
             }

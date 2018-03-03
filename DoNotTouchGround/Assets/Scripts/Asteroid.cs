@@ -43,5 +43,11 @@ public class Asteroid : MonoBehaviour
         Destroy(gameObject);
     }
 
-    
+    void Update ()
+    {
+
+        transform.Rotate(Time.deltaTime,0,2);
+    }
+
+
 }

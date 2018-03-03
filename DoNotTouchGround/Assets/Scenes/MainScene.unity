@@ -2288,8 +2288,11 @@ MonoBehaviour:
     - name: Medium
       enemy: {fileID: 4109968890492412, guid: fd270eb363c6ba7499c31213bebeb81d, type: 2}
       count: 3
-    rate: 0.3
-  - name: Wave 1
+    - name: Missile
+      enemy: {fileID: 4175829093369740, guid: 22dfbd1d61b62f74f8527d48ec74b630, type: 2}
+      count: 1
+    rate: 0.4
+  - name: Wave 2
     enemies:
     - name: Small
       enemy: {fileID: 4945239833902492, guid: 26ef6e13aa60550419b77c5af84e9da8, type: 2}
@@ -2298,10 +2301,33 @@ MonoBehaviour:
       enemy: {fileID: 4109968890492412, guid: fd270eb363c6ba7499c31213bebeb81d, type: 2}
       count: 3
     - name: Large
-      enemy: {fileID: 4265992135382362, guid: 86da436c7688d5c4f80a7e0ee89c66ac, type: 2}
+      enemy: {fileID: 224141927100952270, guid: d030ff75ff948194d8e65531ca078480,
+        type: 2}
       count: 3
-    rate: 0.05
-  timeBetweenWaves: 2
+    - name: Missile
+      enemy: {fileID: 4175829093369740, guid: 22dfbd1d61b62f74f8527d48ec74b630, type: 2}
+      count: 2
+    rate: 0.6
+  - name: Final Wave
+    enemies:
+    - name: Small
+      enemy: {fileID: 4945239833902492, guid: 26ef6e13aa60550419b77c5af84e9da8, type: 2}
+      count: 9
+    - name: Medium
+      enemy: {fileID: 4109968890492412, guid: fd270eb363c6ba7499c31213bebeb81d, type: 2}
+      count: 6
+    - name: Large
+      enemy: {fileID: 224141927100952270, guid: d030ff75ff948194d8e65531ca078480,
+        type: 2}
+      count: 3
+    - name: Mooom
+      enemy: {fileID: 4430390996447268, guid: d5b85ea3f6662744fb70b8fffdab11a7, type: 2}
+      count: 1
+    - name: Missile
+      enemy: {fileID: 4175829093369740, guid: 22dfbd1d61b62f74f8527d48ec74b630, type: 2}
+      count: 3
+    rate: 0.8
+  timeBetweenWaves: 3
   waveCountdown: 0
   waveText: {fileID: 719763382}
 --- !u!1 &1295370608

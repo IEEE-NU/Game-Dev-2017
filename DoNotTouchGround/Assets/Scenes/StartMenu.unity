@@ -1257,6 +1257,7 @@ GameObject:
   - component: {fileID: 1114703158}
   - component: {fileID: 1114703157}
   - component: {fileID: 1114703156}
+  - component: {fileID: 1114703159}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Untagged
@@ -1284,7 +1285,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8826cd0338127d44a8709cab7b72d550, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c584eb1fd56e1f6438c5e2071137b2fd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.12
   m_Pitch: 1
@@ -1342,7 +1343,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1368,6 +1369,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1114703159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114703155}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01207683795fe2946a2031752bee5fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loopLength: 0
+  loopThreshold: 0
 --- !u!1 &1343663057
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,8 +2025,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b6cae44e1dde746b3800707f752f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraSpeed: 5
-  CameraRadius: 5
+  CameraSpeed: 10
+  CameraRadius: 40
 --- !u!20 &1947622264 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20221407018994656, guid: 201e93549a1890a41a7947da896009ae,

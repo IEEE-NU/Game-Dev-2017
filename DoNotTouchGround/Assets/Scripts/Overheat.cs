@@ -26,7 +26,7 @@ public class Overheat : MonoBehaviour
 
     public bool isOverheated()
     {
-        if (currentHeat == 200)
+        if (currentHeat >= maxHeat)
             return true;
         else
             return false;

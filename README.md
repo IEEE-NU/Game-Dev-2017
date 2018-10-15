@@ -36,7 +36,7 @@ git clone https://github.com/IEEE-NU/Game-Dev-2017
 ```
 3. Run the scene using the button with the play icon and have fun!
 ```
-Game Completion: We're working on it!
+Game Completion: When your health points run out!
 ```
 ### Gameplay Instructions
 Launch the game from the StartMenu scene. Once the game has started, use the right and left arrow keys to control the direction the ship is faceing. Press the 'Q', 'W', 'E', or 'R' keys to apply varying amounts of thrust to the ship. Applying thrust will also shoot projectiles out of the back of the ship. Press "Space" to shoot a laser beam from the front of the ship. The laser beam will push asteroids away. Stop the asteroids from hitting the earth for as long as you can!
@@ -51,10 +51,11 @@ Launch the game from the StartMenu scene. Once the game has started, use the rig
 
 * **DrDoak** - *Initial work* - [DoNotTouchGround](https://github.com/IEEE-NU/Game-Dev-2017/tree/master/DoNotTouchGround)
 * **Sweisian** - *Initial work* - [DoNotTouchGround](https://github.com/IEEE-NU/Game-Dev-2017/tree/master/DoNotTouchGround)
+* **Ahkaneti** - *Initial work* - [DoNotTouchGround](https://github.com/IEEE-NU/Game-Dev-2017/tree/master/DoNotTouchGround)
 
 See the list of [contributors](https://github.com/IEEE-NU/Game-Dev-2017/contributors) who engaged to this project.
 
 ## Acknowledgments
 
 * Inspiration
-* etc
+* Larry Zhao has been a great advisor to us along the way, and IEEE-NU has been a great aspiration giver.
